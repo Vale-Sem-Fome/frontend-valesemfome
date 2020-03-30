@@ -11,4 +11,4 @@ Esse repositório é destinado ao código `client-side` da aplicação Vale-Sem-
 
 ## Como Contribuir
 
-Quer constribuir com esse projeto? Leia [o nosso guia de Contribuição](CONTRIBUTING.md).
+Quer constribuir com esse projeto? Leia [o nosso guia de Contribuição](more-infos/CONTRIBUTING.md).
