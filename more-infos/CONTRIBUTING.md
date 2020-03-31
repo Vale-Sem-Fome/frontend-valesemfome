@@ -25,14 +25,14 @@ git checkout -b i-am-groot
 ```
 
 - Qualquer alteração feita por você, deverá ser feita dentro desse branch.
-- Não se esqueça de dar `commit` na sua `branch` e dar enviar sua alterações(`git push`).
+- Não se esqueça de dar `commit` na sua `branch` e enviar suas alterações(`git push`).
 
 ## Commits
 
 Depois de fazer suas contribuição, chegou a hora dos commits. Pedimos que:
 
 - o texto do `commit` esteja em inglês
-- estamos vendo alguma forma de padronização dos textos dos `commits`. Até lá, pedimos para seguir um modelo semelhante ao [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/).
+- estamos vendo alguma forma de padronização dos textos dos `commits`. Até lá, pedimos para que vocês segam um modelo semelhante ao [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
 ## Atualizando o seu repositório local
 
@@ -40,7 +40,7 @@ Caso deseje continuar contribuindo, além de seguir os passos anteriores, sugeri
 
 Existem algumas formas de fazer, mas vou deixar uma sugestão de comandos e passos para seguir:
 
-Entre na pasta do projeto e, no `branch master`, adicione como repositório remoto o repósitio de onde virá a atualização, no caso:
+Entre na pasta do projeto e, no `branch master`, adicione como repositório remoto o repositório de onde virá a atualização, no caso este aqui:
 
 ```bash
 git remote add upstream https://github.com/Vale-Sem-Fome/frontend-vsf.git
