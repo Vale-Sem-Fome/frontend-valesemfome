@@ -40,7 +40,7 @@ Caso deseje continuar contribuindo, além de seguir os passos anteriores, sugeri
 
 Existem algumas formas de fazer, mas vou deixar uma sugestão de comandos e passos para seguir:
 
-Entre na pasta do projeto e, no `branch master`, adicione como repositório remoto o repositório de onde virá a atualização, no caso este aqui:
+Entre na pasta do projeto e, no `branch master`, adicione como repositório remoto o aquele de onde virá a atualização, no caso este aqui:
 
 ```bash
 git remote add upstream https://github.com/Vale-Sem-Fome/frontend-vsf.git
