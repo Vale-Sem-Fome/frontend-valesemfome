@@ -1,14 +1,13 @@
 # Vale Sem Fome - Front-End
 
-## Objetivo
+## 🏹 Objetivo
 
 Esse repositório é destinado ao código `client-side` da aplicação Vale-Sem-Fome.
 
-## Tecnologias Utilizadas
+## 🔧 Tecnologias Utilizadas
 
 - ReactJS
-- React Native
 
-## Como Contribuir
+## 💻 Como Contribuir
 
 Quer constribuir com esse projeto? Leia [o nosso guia de Contribuição](more-infos/CONTRIBUTING.md).
