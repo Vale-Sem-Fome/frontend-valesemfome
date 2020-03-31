@@ -1,4 +1,4 @@
-# Contribuindo com a aplicação Vale Sem Fome
+# Contribuindo com o Front-End da aplicação Vale Sem Fome
 
 Antes de dar qualquer contribuição, verifique as `issues` desse repositório para que você saiba com o que contribuir. 😉
 
@@ -7,7 +7,7 @@ Antes de dar qualquer contribuição, verifique as `issues` desse repositório p
 Dê um `fork` nesse repositório e clone para sua máquina local:
 
 ```bash
-git clone https://github.com/Vale-Sem-Fome/frontend-vsf.git
+git clone https://github.com/<se-nome-de-usuario-github>/frontend-vsf.git
 ```
 
 ## Antes de dar Commits
