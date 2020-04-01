@@ -1,0 +1,42 @@
+@import 'variables.scss';
+
+.fake-button a, input[type=submit]{
+    color: $light-gray;
+    text-shadow: 2px 2px 4px $dark-gray-color;
+    box-shadow: 2px 2px 6px $dark-gray-color;
+    font-family: $font-anton;
+    font-size: 1.875em;
+    letter-spacing: 12%;
+    text-transform: uppercase;
+    background-color: $dark-green-color;
+    height: 50px;
+    width: max-content;
+    padding: 10px 35px;
+    border-radius: 8px;
+}
+
+.fake-button {
+    margin-top: 50px;
+}
+
+input[type=submit]{
+    border: none;
+    color: $light-gray;
+    text-shadow: 2px 2px 4px $dark-gray-color;
+    box-shadow: 2px 2px 6px $dark-gray-color;
+    font-family: $font-anton;
+    font-size: 1.875em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background-color: $dark-green-color;
+    height: 75px;
+    border-radius: 8px;
+}
+
+.form-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}

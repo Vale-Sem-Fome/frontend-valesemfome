@@ -1,18 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,400;0,700;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,400;0,700;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,400;0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,400;0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,400;0,700;1,300&display=swap");
 .img-fluid {
   max-width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
-  .header {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.header {
+  height: 100vh;
+}
 
+.header .text {
+  text-align: center;
+}
+
+.header, .logos, .fake-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
   .img-logo {
     max-width: 100%;
   }
@@ -37,6 +46,67 @@
   color: 700;
 }
 
+.all-options {
+  padding-top: 15px;
+}
+
+.all-options .option {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.fake-button a, input[type=submit] {
+  color: #F2F2F2;
+  text-shadow: 2px 2px 4px #595959;
+  box-shadow: 2px 2px 6px #595959;
+  font-family: "Anton", sans-serif;
+  font-size: 1.875em;
+  letter-spacing: 12%;
+  text-transform: uppercase;
+  background-color: #93A66A;
+  height: 50px;
+  width: max-content;
+  padding: 10px 35px;
+  border-radius: 8px;
+}
+
+.fake-button {
+  margin-top: 50px;
+}
+
+input[type=submit] {
+  border: none;
+  color: #F2F2F2;
+  text-shadow: 2px 2px 4px #595959;
+  box-shadow: 2px 2px 6px #595959;
+  font-family: "Anton", sans-serif;
+  font-size: 1.875em;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background-color: #93A66A;
+  height: 75px;
+  border-radius: 8px;
+}
+
+.form-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 15px;
+  font-size: 0.875em;
+}
+
+.footer .container {
+  border-top: 1px solid #8C8C8C;
+  padding-top: 15px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -52,6 +122,12 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   color: #595959;
+}
+
+a {
+  text-decoration: none;
+  color: #93A66A;
+  font-weight: 700;
 }
 
 .container {

@@ -16,7 +16,15 @@
     padding: 0;
 }
 
-
 .form-group .question-number{
     color: $font-strong;
+}
+
+.all-options{
+    padding-top: 15px;
+}
+
+.all-options .option{
+    padding-top: 8px;
+    padding-bottom: 8px;
 }

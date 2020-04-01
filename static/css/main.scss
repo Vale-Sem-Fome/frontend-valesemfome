@@ -1,6 +1,8 @@
 @import 'components/variables.scss';
 @import 'components/header.scss';
 @import 'components/forms.scss';
+@import 'components/buttons.scss';
+@import 'components/footer.scss';
 
 
 *{
@@ -19,6 +21,13 @@ body{
     font-family: $font-lato;
     font-weight: $font-light;
     color: $dark-gray-color;
+}
+
+a{
+    text-decoration: none;
+    color: $dark-green-color;
+    font-weight: $font-strong;
+
 }
 
 .container{
