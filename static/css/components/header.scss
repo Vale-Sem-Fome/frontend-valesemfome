@@ -1,0 +1,40 @@
+@import 'variables.scss';
+
+.img-fluid{
+    max-width: 100%;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .header{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-logo{
+        max-width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+
+    
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+
+@media only screen and (min-width: 992px) {
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+} 
