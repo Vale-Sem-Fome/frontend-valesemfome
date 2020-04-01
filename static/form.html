@@ -6,142 +6,218 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Formulário</title>
 </head>
-<body>
+<body id="top">
     <main class="main">
-        <header class="header">
-            <div class="logos">
-                <img src="img/logo.png" alt="sjc sem fome e regeneração global" srcset="">
-            </div>
-            <div class="text">
-                <h1>CADASTRO DE FAMÍLIAS
-                    MOVIMENTO COVID19 SJC SEM FOME
-                </h1>
-                <p>
-                    Importante: este cadastro não garante o 
-                    recebimento dos alimentos, mas vamos 
-                    nos esforçar ao máximo para atender a todos. 
-                </p>
-            </div>
-        </header>
-        <form class="form">
-            <div class="form-group">
-                <label for="full-name">
-                    <span>1.</span> Qual seu nome completo?
-                </label>
-                <input type="text" id="full-name" placeholder="Reponda aqui...">
-            </div>
-            <div class="form-group">
-                <label for="whatsapp">
-                    <span>2.</span> Qual é o seu telefone de contato (WhatsApp)?
-                </label>
-                <input type="tel" id="whatsapp" placeholder="(11) 96123-4567">
-            </div>
-            <div class="form-group">
-               <label>
-                   <span>3.</span> Quantas pessoas vivem na sua casa? *
-                </label>
-               <input type="radio" name="parents" id="opt1">
-               <label for="opt1"> 1</label>
-               <input type="radio" name="parents" id="opt2">
-               <label for="opt2"> 2</label>
-               <input type="radio" name="parents" id="opt3">
-               <label for="opt3"> 3</label>
-               <input type="radio" name="parents" id="opt4">
-               <label for="opt4"> 4</label>
-               <input type="radio" name="parents" id="opt5">
-               <label for="opt5"> 5</label>
-               <input type="radio" name="parents" id="opt6">
-               <label for="opt6"> 6</label>
-               <input type="radio" name="parents" id="opt7">
-               <label for="opt7"> 7</label>
-               <input type="radio" name="parents" id="opt8">
-               <label for="opt8"> 8</label>
-               <input type="radio" name="parents" id="opt9">
-               <label for="opt9"> 9</label>
-               <input type="radio" name="parents" id="opt10">
-               <label for="opt10"> 10</label>
-               <input type="radio" name="parents" id="opt-10more">
-               <label for="opt-10more"> +10</label>
-            </div>
-            <div class="form-group">
-                <label>
-                    <span>4.</span> Qual região da cidade fica sua residência? *
-                </label>
-                <input type="radio" name="regionCity" id="opt-south">
-                <label for="opt-south"> Sul</label>
-                <input type="radio" name="regionCity" id="opt-north">
-                <label for="opt-north"> Norte</label>
-                <input type="radio" name="regionCity" id="opt-center">
-                <label for="opt-center"> Centro</label>
-                <input type="radio" name="regionCity" id="opt-west">
-                <label for="opt-west"> Oeste</label>
-                <input type="radio" name="regionCity" id="opt-east">
-                <label for="opt-east"> Leste</label>
-                <input type="radio" name="regionCity" id="opt-sfx">
-                <label for="opt-sfx"> Distrito SFX</label>
-                <input type="radio" name="regionCity" id="opt-emd">
-                <label for="opt-emd"> Distrito Eugênio de Melo</label>
-             </div>
-             <div class="form-group">
-                <label for="cep">
-                    <span>5.</span> Qual seu CEP em São José dos Campos? *
-                </label>
-                <input type="text" id="cep" placeholder="Reponda aqui...">
-            </div>
-            <div class="form-group">
-                <label for="neighborhood">
-                    <span>6.</span> Qual Bairro você mora? *
-                </label>
-                <input type="text" id="neighborhood" placeholder="Reponda aqui...">
-            </div>
-            <div class="form-group">
-                <label for="street">
-                    <span>7.</span> Qual seu endereço completo? (rua, número) *
-                </label>
-                <input type="text" id="street" placeholder="Reponda aqui...">
-            </div>
-            <div class="form-group">
-                <label for="reference-point">
-                    <span>8.</span> Qual ponto de referência da sua residência? 
-                </label>
-                <input type="text" id="reference-point" placeholder="Reponda aqui...">
-            </div>
-            <div class="form-group">
-                <label>
-                    <span>9.</span>
-                    Como você considera sua situação neste momento? *
-                </label>
-                <input type="radio" name="financialState" id="ext-serious">
-                <label for="ext-serious"> Extremamente Séria - Não tenho nenhuma renda nem nada para comer</label>
-                <input type="radio" name="financialState" id="much-serious">
-                <label for="much-serious"> Muito Séria - Tenho pouquíssima renda e muito pouco para comer</label>
-                <input type="radio" name="financialState" id="serious">
-                <label for="serious"> Séria - Tenho alguma comida, mas não irá durar muito.</label>
-                <input type="radio" name="financialState" id="risk">
-                <label for="risk"> Em Risco - Só tenho o mínimo.</label>
-    
-                <div class="form-group other-aws">
-                    <input type="radio" name="financialState" id="other-aws">
-                    <label for="other-aws"> Outro</label>
-                    <input type="text" id="other-aws" placeholder="Reponda aqui...">
+            <header class="header">
+                <div class="container">
+                    <div class="logos">
+                        <img class="img-logo" src="img/logo.png" alt="sjc sem fome e regeneração global" srcset="">
+                    </div>
+                    <div class="text">
+                        <h1>
+                            CADASTRO DE FAMÍLIAS
+                            MOVIMENTO COVID19 SJC SEM FOME
+                        </h1>
+                        <p>
+                            Importante: este cadastro não garante o 
+                            recebimento dos alimentos, mas vamos 
+                            nos esforçar ao máximo para atender a todos. 
+                        </p>
+                    </div>
+                    <div class="fake-button">
+                        <a href="#form">Começar!</a>
+                    </div>
                 </div>
-             </div>
-             <div class="form-group">
-                 <label>
-                     <span>9.</span> Por último, você (sua família) já possuem cadastro único? *
-                </label>
-                 <span>A entrega da doação não depende de nenhum cadastro prévio.</span>
-                <input type="radio" name="previousRegistry" id="yes-aws">
-                <label for="yes-aws"> Sim</label>
-                <input type="radio" name="previousRegistry" id="not-aws">
-                <label for="not-aws"> Não.</label>
-                <input type="radio" name="previousRegistry" id="not-know-aws">
-                <label for="not-know-aws"> Não sei.</label>
-             </div>
-            <div class="form-buttons">
-                <input type="submit" value="Enviar">
-            </div>
-        </form>
+            </header>
+            <form class="form" id="form">
+                <div class="container">
+                <div class="form-group" id="question1">
+                    <div class="input-group">
+                        <label for="full-name">
+                            <span class="question-number">1.</span> Qual seu nome completo? *
+                        </label>
+                        <input type="text" id="full-name" placeholder="Reponda aqui...">
+                        <div class="fake-group-button">
+                            <a href="#top">anterior</a>
+                            <a href="#question2">próxima</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group" id="question2">
+                    <div class="input-group">
+                        <label for="whatsapp">
+                            <span class="question-number">2.</span> Qual é o seu telefone de contato (WhatsApp)? *
+                        </label>
+                        <input type="tel" id="whatsapp" placeholder="Exemplo (11) 96123-4567">
+                        <div class="fake-group-button">
+                            <a href="#question1">anterior</a>
+                            <a href="#question3">próxima</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group" id="question3">
+                    <div class="input-group">
+                        <label>
+                            <span class="question-number">3.</span> Quantas pessoas vivem na sua casa? *
+                        </label>
+                            <div class="options">
+                                <input type="radio" name="parents" id="opt1">
+                                <label for="opt1"> 1</label>
+                                <input type="radio" name="parents" id="opt2">
+                                <label for="opt2"> 2</label>
+                                <input type="radio" name="parents" id="opt3">
+                                <label for="opt3"> 3</label>
+                                <input type="radio" name="parents" id="opt4">
+                                <label for="opt4"> 4</label>
+                                <input type="radio" name="parents" id="opt5">
+                                <label for="opt5"> 5</label>
+                                <input type="radio" name="parents" id="opt6">
+                                <label for="opt6"> 6</label>
+                                <input type="radio" name="parents" id="opt7">
+                                <label for="opt7"> 7</label>
+                                <input type="radio" name="parents" id="opt8">
+                                <label for="opt8"> 8</label>
+                                <input type="radio" name="parents" id="opt9">
+                                <label for="opt9"> 9</label>
+                                <input type="radio" name="parents" id="opt10">
+                                <label for="opt10"> 10</label>
+                                <input type="radio" name="parents" id="opt-10more">
+                                <label for="opt-10more"> +10</label>
+                            </div>
+                            <div class="fake-group-button">
+                                <a href="#question2">anterior</a>
+                                <a href="#question4">próxima</a>
+                            </div>
+                    </div>
+                </div>
+                <div class="form-group" id="question4">
+                    <div class="input-group">
+                        <label>
+                            <span class="question-number">4.</span> Qual região da cidade fica sua residência? *
+                        </label>
+                        <div class="options">
+                            <input type="radio" name="regionCity" id="opt-south">
+                            <label for="opt-south"> Sul</label>
+                            <input type="radio" name="regionCity" id="opt-north">
+                            <label for="opt-north"> Norte</label>
+                            <input type="radio" name="regionCity" id="opt-center">
+                            <label for="opt-center"> Centro</label>
+                            <input type="radio" name="regionCity" id="opt-west">
+                            <label for="opt-west"> Oeste</label>
+                            <input type="radio" name="regionCity" id="opt-east">
+                            <label for="opt-east"> Leste</label>
+                            <input type="radio" name="regionCity" id="opt-sfx">
+                            <label for="opt-sfx"> Distrito SFX</label>
+                            <input type="radio" name="regionCity" id="opt-emd">
+                            <label for="opt-emd"> Distrito Eugênio de Melo</label>
+                        </div>
+                        <div class="fake-group-button">
+                            <a href="#question3">anterior</a>
+                            <a href="#question5">próxima</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group" id="question5">
+                    <div class="input-group">
+                        <label for="cep">
+                            <span class="question-number">5.</span> Qual seu CEP em São José dos Campos? *
+                        </label>
+                        <input type="text" id="cep" placeholder="Reponda aqui...">
+                        <div class="fake-group-button">
+                            <a href="#question4">anterior</a>
+                            <a href="#question6">próxima</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group" id="question6">
+                    <div class="input-group">
+                        <label for="neighborhood">
+                            <span class="question-number">6.</span> Qual Bairro você mora? *
+                        </label>
+                        <input type="text" id="neighborhood" placeholder="Reponda aqui...">
+                        <div class="fake-group-button">
+                            <a href="#question5">anterior</a>
+                            <a href="#question7">próxima</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group" id="question7">
+                    <div class="input-group">
+                        <label for="street">
+                            <span class="question-number">7.</span> Qual seu endereço completo? (rua, número) *
+                        </label>
+                        <input type="text" id="street" placeholder="Reponda aqui...">
+                        <div class="fake-group-button">
+                            <a href="#question6">anterior</a>
+                            <a href="#question8">próxima</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group" id="question8">
+                    <div class="input-group">
+                        <label for="reference-point">
+                            <span class="question-number">8.</span> Qual ponto de referência da sua residência? *
+                        </label>
+                        <input type="text" id="reference-point" placeholder="Reponda aqui...">
+                        <div class="fake-group-button">
+                            <a href="#question7">anterior</a>
+                            <a href="#question9">próxima</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group" id="question9">
+                    <div class="input-group">
+                        <label>
+                            <span class="question-number">9.</span>
+                            Como você considera sua situação neste momento? *
+                        </label>
+                        <div class="options">
+                            <input type="radio" name="financialState" id="ext-serious">
+                            <label for="ext-serious"> Extremamente Séria - Não tenho nenhuma renda nem nada para comer</label>
+                            <input type="radio" name="financialState" id="much-serious">
+                            <label for="much-serious"> Muito Séria - Tenho pouquíssima renda e muito pouco para comer</label>
+                            <input type="radio" name="financialState" id="serious">
+                            <label for="serious"> Séria - Tenho alguma comida, mas não irá durar muito.</label>
+                            <input type="radio" name="financialState" id="risk">
+                            <label for="risk"> Em Risco - Só tenho o mínimo.</label>
+                                    
+                        <div class="other-aws">
+                            <input type="radio" name="financialState" id="other-aws">
+                            <label for="other-aws"> Outro</label>
+                            <input type="text" id="other-aws" placeholder="Reponda aqui...">
+                        </div>
+                        </div>
+                        <div class="fake-group-button">
+                            <a href="#question8">anterior</a>
+                            <a href="#question10">próxima</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group" id="question10">
+                    <div class="input-group">
+                        <label>
+                            <span class="question-number">10.</span> Por último, você (sua família) já possuem cadastro único? *
+                            <span>A entrega da doação não depende de nenhum cadastro prévio.</span>
+                        </label>
+                        <div class="options">
+                            <input type="radio" name="previousRegistry" id="yes-aws">
+                            <label for="yes-aws"> Sim</label>
+                            <input type="radio" name="previousRegistry" id="not-aws">
+                            <label for="not-aws"> Não.</label>
+                            <input type="radio" name="previousRegistry" id="not-know-aws">
+                            <label for="not-know-aws"> Não sei.</label>
+                        </div>
+                        <div class="fake-group-button">
+                            <a href="#question9">anterior</a>
+                        </div>
+                        <div class="form-buttons">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
     </main>
     <footer>
         <p>powered by <a href="https://github.com/Vale-Sem-Fome">Vale Sem Fome</a></p> 
