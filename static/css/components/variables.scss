@@ -1,19 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,400;0,700;1,300&display=swap');
 
-$red-color: #F56B6B;
 
-$dark-green-color: #93A66A;
-$light-green-color: #CFCB9B;
+$background-body: #FFFBFF;
 
-$dark-gray-color: #595959;
-$medium-gray-color: #8C8C8C;
+$dangerous-alert-color: #F56B6B;
+
+$background-button-color: #93A66A;
+$font-button-color: #F2F2F2;
+$secundary-green-color: #CFCB9B;
+
+$border-footer-color: #8C8C8C;
+$border-input-text-color: #93A66A;
 
 $white-color: #FFFFFF;
-$light-gray: #F2F2F2;
-$really-light-gray: #FFFBFF;
+
+$text-shadow-color: #595959;
+$box-shadow-color: #595959;
 
 
-$font-anton:'Anton', sans-serif;
-$font-lato: 'Lato', sans-serif;
-$font-light: 300;
-$font-strong: 700;
+$link-text-color: #93A66A;
+$font-text-color: #595959;
+$button-font: 'Anton', sans-serif;
+$headline-font:'Anton', sans-serif;
+$font-text: 'Lato', sans-serif;
+$font-weight-light: 300;
+$font-weight-strong: 700;

@@ -4,14 +4,35 @@
     max-width: 100%;
 }
 
+.header{
+    height: 100vh;
+    position: relative;
+}
+
+.header .text{
+    text-align: center;
+}
+
+.header, .logos, .fake-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-height: 400px){
+    .img-logo{
+        width: 50%;
+    }
+
+    h1{
+        font-size: 1.3em;
+    }
+}
 
 @media only screen and (max-width: 600px) {
 
     .header{
         height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     .img-logo{
@@ -19,19 +40,11 @@
     }
 }
 
-
-@media only screen and (min-width: 600px) {
-
-    
-}
-
-@media only screen and (min-width: 768px) {
-
-}
-
-
 @media only screen and (min-width: 992px) {
 
+    .header{
+        height: 100vh;
+    }
 }
 
 

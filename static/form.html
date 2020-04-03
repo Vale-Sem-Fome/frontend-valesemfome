@@ -13,17 +13,19 @@
                     <div class="logos">
                         <img class="img-logo" src="img/logo.png" alt="sjc sem fome e regeneração global" srcset="">
                     </div>
-                    <div class="text">
-                        <h1>
-                            CADASTRO DE FAMÍLIAS
-                            MOVIMENTO COVID19 SJC SEM FOME
-                        </h1>
-                        <p>
-                            Importante: este cadastro não garante o 
-                            recebimento dos alimentos, mas vamos 
-                            nos esforçar ao máximo para atender a todos. 
-                        </p>
-                    </div>
+                    <section>
+                        <div class="text">
+                            <h1>
+                                CADASTRO DE FAMÍLIAS
+                                MOVIMENTO COVID19 SJC SEM FOME
+                            </h1>
+                            <p>
+                                <strong>Importante:</strong> este cadastro não garante o 
+                                recebimento dos alimentos, mas vamos 
+                                nos esforçar ao máximo para atender a todos. 
+                            </p>
+                        </div>
+                    </section>
                     <div class="fake-button">
                         <a href="#form">Começar!</a>
                     </div>
@@ -32,195 +34,268 @@
             <form class="form" id="form">
                 <div class="container">
                 <div class="form-group" id="question1">
-                    <div class="input-group">
+                    <div class="inputs-group">
                         <label for="full-name">
                             <span class="question-number">1.</span> Qual seu nome completo? *
                         </label>
                         <input type="text" id="full-name" placeholder="Reponda aqui...">
                         <div class="fake-group-button">
-                            <a href="#top">anterior</a>
-                            <a href="#question2">próxima</a>
+                            <a href="#top"><ion-icon name="arrow-up-outline"></ion-icon></a>
+                            <a href="#question2"><ion-icon name="arrow-down-outline"></ion-icon></a>
                         </div>
                     </div>
                 </div>
                 <div class="form-group" id="question2">
-                    <div class="input-group">
-                        <label for="whatsapp">
-                            <span class="question-number">2.</span> Qual é o seu telefone de contato (WhatsApp)? *
+                    <div class="inputs-group">
+                        <label for="cpf">
+                            <span class="question-number">2.</span> Qual é o seu CPF? *
                         </label>
-                        <input type="tel" id="whatsapp" placeholder="Exemplo (11) 96123-4567">
+                        <input type="text" id="cpf" placeholder="Exemplo: 00011122233">
                         <div class="fake-group-button">
-                            <a href="#question1">anterior</a>
-                            <a href="#question3">próxima</a>
+                            <a href="#question1"><ion-icon name="arrow-up-outline"></ion-icon></a>
+                            <a href="#question3"><ion-icon name="arrow-down-outline"></ion-icon></a>
                         </div>
                     </div>
                 </div>
                 <div class="form-group" id="question3">
-                    <div class="input-group">
-                        <label>
-                            <span class="question-number">3.</span> Quantas pessoas vivem na sua casa? *
+                    <div class="inputs-group">
+                        <label for="whatsapp">
+                            <span class="question-number">3.</span> Qual é o seu telefone de contato (WhatsApp)? *
                         </label>
-                            <div class="options">
-                                <input type="radio" name="parents" id="opt1">
-                                <label for="opt1"> 1</label>
-                                <input type="radio" name="parents" id="opt2">
-                                <label for="opt2"> 2</label>
-                                <input type="radio" name="parents" id="opt3">
-                                <label for="opt3"> 3</label>
-                                <input type="radio" name="parents" id="opt4">
-                                <label for="opt4"> 4</label>
-                                <input type="radio" name="parents" id="opt5">
-                                <label for="opt5"> 5</label>
-                                <input type="radio" name="parents" id="opt6">
-                                <label for="opt6"> 6</label>
-                                <input type="radio" name="parents" id="opt7">
-                                <label for="opt7"> 7</label>
-                                <input type="radio" name="parents" id="opt8">
-                                <label for="opt8"> 8</label>
-                                <input type="radio" name="parents" id="opt9">
-                                <label for="opt9"> 9</label>
-                                <input type="radio" name="parents" id="opt10">
-                                <label for="opt10"> 10</label>
-                                <input type="radio" name="parents" id="opt-10more">
-                                <label for="opt-10more"> +10</label>
-                            </div>
-                            <div class="fake-group-button">
-                                <a href="#question2">anterior</a>
-                                <a href="#question4">próxima</a>
-                            </div>
+                        <input type="tel" id="whatsapp" placeholder="Exemplo: (11) 96123-4567">
+                        <div class="fake-group-button">
+                            <a href="#question2"><ion-icon name="arrow-up-outline"></ion-icon></a>
+                            <a href="#question4"><ion-icon name="arrow-down-outline"></ion-icon></a>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group" id="question4">
-                    <div class="input-group">
+                    <div class="inputs-group">
                         <label>
-                            <span class="question-number">4.</span> Qual região da cidade fica sua residência? *
+                            <span class="question-number">4.</span> Quantas pessoas vivem na sua casa? *
                         </label>
-                        <div class="options">
-                            <input type="radio" name="regionCity" id="opt-south">
-                            <label for="opt-south"> Sul</label>
-                            <input type="radio" name="regionCity" id="opt-north">
-                            <label for="opt-north"> Norte</label>
-                            <input type="radio" name="regionCity" id="opt-center">
-                            <label for="opt-center"> Centro</label>
-                            <input type="radio" name="regionCity" id="opt-west">
-                            <label for="opt-west"> Oeste</label>
-                            <input type="radio" name="regionCity" id="opt-east">
-                            <label for="opt-east"> Leste</label>
-                            <input type="radio" name="regionCity" id="opt-sfx">
-                            <label for="opt-sfx"> Distrito SFX</label>
-                            <input type="radio" name="regionCity" id="opt-emd">
-                            <label for="opt-emd"> Distrito Eugênio de Melo</label>
-                        </div>
-                        <div class="fake-group-button">
-                            <a href="#question3">anterior</a>
-                            <a href="#question5">próxima</a>
-                        </div>
+                            <div class="all-options">
+                                <div class="option">
+                                    <input type="radio" name="parents" id="opt1">
+                                <label for="opt1"> 1</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" name="parents" id="opt2">
+                                    <label for="opt2"> 2</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" name="parents" id="opt3">
+                                    <label for="opt3"> 3</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" name="parents" id="opt4">
+                                    <label for="opt4"> 4</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" name="parents" id="opt5">
+                                    <label for="opt5"> 5</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" name="parents" id="opt6">
+                                    <label for="opt6"> 6</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" name="parents" id="opt7">
+                                    <label for="opt7"> 7</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" name="parents" id="opt8">
+                                    <label for="opt8"> 8</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" name="parents" id="opt9">
+                                    <label for="opt9"> 9</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" name="parents" id="opt10">
+                                    <label for="opt10"> 10</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" name="parents" id="opt-10more">
+                                <label for="opt-10more"> <strong>+</strong>10</label>
+                                </div>
+                            </div>
+                            <div class="fake-group-button">
+                                <a href="#question3"><ion-icon name="arrow-up-outline"></ion-icon></a>
+                                <a href="#question5"><ion-icon name="arrow-down-outline"></ion-icon></a>
+                            </div>
                     </div>
                 </div>
                 <div class="form-group" id="question5">
-                    <div class="input-group">
-                        <label for="cep">
-                            <span class="question-number">5.</span> Qual seu CEP em São José dos Campos? *
+                    <div class="inputs-group">
+                        <label>
+                            <span class="question-number">5.</span> Qual região da cidade fica sua residência? *
                         </label>
-                        <input type="text" id="cep" placeholder="Reponda aqui...">
+                        <div class="all-options">
+                            <div class="option">
+                                <input type="radio" name="regionCity" id="opt-south">
+                                <label for="opt-south"> Sul</label> 
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="regionCity" id="opt-north">
+                                <label for="opt-north"> Norte</label> 
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="regionCity" id="opt-center">
+                                <label for="opt-center"> Centro</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="regionCity" id="opt-west">
+                                <label for="opt-west"> Oeste</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="regionCity" id="opt-east">
+                                <label for="opt-east"> Leste</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="regionCity" id="opt-sfx">
+                                <label for="opt-sfx"> Distrito SFX</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="regionCity" id="opt-emd">
+                                <label for="opt-emd"> Distrito Eugênio de Melo</label>
+                            </div>
+                        </div>
                         <div class="fake-group-button">
-                            <a href="#question4">anterior</a>
-                            <a href="#question6">próxima</a>
+                            <a href="#question4"><ion-icon name="arrow-up-outline"></ion-icon></a>
+                            <a href="#question6"><ion-icon name="arrow-down-outline"></ion-icon></a>
                         </div>
                     </div>
                 </div>
                 <div class="form-group" id="question6">
-                    <div class="input-group">
-                        <label for="neighborhood">
-                            <span class="question-number">6.</span> Qual Bairro você mora? *
+                    <div class="inputs-group">
+                        <label for="address">
+                            <span class="question-number">6.</span> Qual é o seu endereço São José dos Campos? *
                         </label>
-                        <input type="text" id="neighborhood" placeholder="Reponda aqui...">
+                        <div class="input-field">
+                            <label for="cep">CEP:</label>
+                            <input type="text" id="cep" placeholder="Exemplo: 12345678">
+                        </div>
+                        <div class="input-field">
+                            <label for="street">Rua:</label>
+                            <input type="text" id="street" placeholder="Exemplo: Avenida das Flores">
+                        </div>
+                        <div class="input-field">
+                            <label for="house-number">Nº:</label>
+                            <input type="text" id="house-number" placeholder="Exemplo: 200">
+                        </div>                     
+                        <div class="input-field">
+                            <label for="neighborhood">Bairro:</label>
+                            <input type="text" id="neighborhood" placeholder="Exemplo: Campo dos Elíseos">
+                        </div>
+                        <div class="input-field">
+                            <label for="reference-point">Ponto de Referência:</label>
+                            <input type="text" id="reference-point" placeholder="Exemplo: Na esquina do campo de futebol.">
+                        </div>
                         <div class="fake-group-button">
-                            <a href="#question5">anterior</a>
-                            <a href="#question7">próxima</a>
+                            <a href="#question5"><ion-icon name="arrow-up-outline"></ion-icon></a>
+                            <a href="#question7"><ion-icon name="arrow-down-outline"></ion-icon></a>
                         </div>
                     </div>
                 </div>
                 <div class="form-group" id="question7">
-                    <div class="input-group">
-                        <label for="street">
-                            <span class="question-number">7.</span> Qual seu endereço completo? (rua, número) *
+                    <div class="inputs-group">
+                        <label>
+                            <span class="question-number">7.</span>
+                            Como você considera sua situação neste momento? *
                         </label>
-                        <input type="text" id="street" placeholder="Reponda aqui...">
+                        <div class="all-options">
+                            <div class="option">
+                                <input type="radio" name="financialState" id="ext-serious">
+                                <label for="ext-serious"> Extremamente Séria - Não tenho nenhuma renda nem nada para comer</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="financialState" id="much-serious">
+                                <label for="much-serious"> Muito Séria - Tenho pouquíssima renda e muito pouco para comer</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="financialState" id="serious">
+                                <label for="serious"> Séria - Tenho alguma comida, mas não irá durar muito.</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="financialState" id="risk">
+                                <label for="risk"> Em Risco - Só tenho o mínimo.</label>
+                            </div>
+                            <div class="option">
+                                <div class="other-aws">
+                                    <input type="radio" name="financialState" id="other-aws">
+                                    <label for="other-aws"> Outro</label>
+                                    <input type="text" id="other-aws" placeholder="Reponda aqui...">
+                                </div>
+                            </div>
+                        </div>
                         <div class="fake-group-button">
-                            <a href="#question6">anterior</a>
-                            <a href="#question8">próxima</a>
+                            <a href="#question6"><ion-icon name="arrow-up-outline"></ion-icon></a>
+                            <a href="#question8"><ion-icon name="arrow-down-outline"></ion-icon></a>
                         </div>
                     </div>
                 </div>
                 <div class="form-group" id="question8">
-                    <div class="input-group">
-                        <label for="reference-point">
-                            <span class="question-number">8.</span> Qual ponto de referência da sua residência? *
+                    <div class="inputs-group">
+                        <label>
+                            <span class="question-number">8.</span> Por último, você (sua família) já possuem cadastro único? *
                         </label>
-                        <input type="text" id="reference-point" placeholder="Reponda aqui...">
+                        <span>A entrega da doação não depende de nenhum cadastro prévio.</span>
+                        <div class="all-options">
+                            <div class="option">
+                                <input type="radio" name="previousRegistry" id="yes-aws">
+                                <label for="yes-aws"> Sim</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="previousRegistry" id="not-aws">
+                                <label for="not-aws"> Não.</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="previousRegistry" id="not-know-aws">
+                                <label for="not-know-aws"> Não sei.</label>
+                            </div>
+                        </div>
                         <div class="fake-group-button">
-                            <a href="#question7">anterior</a>
-                            <a href="#question9">próxima</a>
+                            <a href="#question7"><ion-icon name="arrow-up-outline"></ion-icon></a>
+                            <a href="#agreement"><ion-icon name="arrow-down-outline"></ion-icon></a>
                         </div>
                     </div>
                 </div>
-                <div class="form-group" id="question9">
-                    <div class="input-group">
-                        <label>
-                            <span class="question-number">9.</span>
-                            Como você considera sua situação neste momento? *
-                        </label>
-                        <div class="options">
-                            <input type="radio" name="financialState" id="ext-serious">
-                            <label for="ext-serious"> Extremamente Séria - Não tenho nenhuma renda nem nada para comer</label>
-                            <input type="radio" name="financialState" id="much-serious">
-                            <label for="much-serious"> Muito Séria - Tenho pouquíssima renda e muito pouco para comer</label>
-                            <input type="radio" name="financialState" id="serious">
-                            <label for="serious"> Séria - Tenho alguma comida, mas não irá durar muito.</label>
-                            <input type="radio" name="financialState" id="risk">
-                            <label for="risk"> Em Risco - Só tenho o mínimo.</label>
-                                    
-                        <div class="other-aws">
-                            <input type="radio" name="financialState" id="other-aws">
-                            <label for="other-aws"> Outro</label>
-                            <input type="text" id="other-aws" placeholder="Reponda aqui...">
-                        </div>
-                        </div>
+                <div class="form-group" id="agreement">
+                    <div class="inputs-group">
                         <div class="fake-group-button">
-                            <a href="#question8">anterior</a>
-                            <a href="#question10">próxima</a>
-                        </div>
+                        <a href="#question1">Rever minhas Repostas</a>
                     </div>
-                </div>
-                <div class="form-group" id="question10">
-                    <div class="input-group">
-                        <label>
-                            <span class="question-number">10.</span> Por último, você (sua família) já possuem cadastro único? *
-                            <span>A entrega da doação não depende de nenhum cadastro prévio.</span>
-                        </label>
-                        <div class="options">
-                            <input type="radio" name="previousRegistry" id="yes-aws">
-                            <label for="yes-aws"> Sim</label>
-                            <input type="radio" name="previousRegistry" id="not-aws">
-                            <label for="not-aws"> Não.</label>
-                            <input type="radio" name="previousRegistry" id="not-know-aws">
-                            <label for="not-know-aws"> Não sei.</label>
+                        <section>
+                            <h3>TERMO DE ACEITE</h3>
+                            <p>Autorizo receber mensagens com informações e questões sobre
+                            <strong>MOVIMENTO COVID19 SJC SEM FOME</strong> e que meus dados sejam armazenados 
+                            para fins estatísticos nos termos da Lei Geral de Proteção de Dados. *
+                            </p>
+                        </section>
+                        <div class="all-options">
+                            <div class="option">
+                                <input type="radio" name="agreement-recipients" id="agree">
+                                <label for="agree"> Aceito</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="agreement-recipients" id="not-agree">
+                                <label for="not-agree"> Não Aceito</label>
+                            </div>
                         </div>
-                        <div class="fake-group-button">
-                            <a href="#question9">anterior</a>
-                        </div>
-                        <div class="form-buttons">
+                        <div class="form-buttons" id="send-answer">
                             <input type="submit" value="Enviar">
                         </div>
                     </div>
                 </div>
             </form>
         </div>
-
     </main>
-    <footer>
-        <p>powered by <a href="https://github.com/Vale-Sem-Fome">Vale Sem Fome</a></p> 
+    <footer class="footer">
+        <div class="container">
+            <p>powered by <a href="https://github.com/Vale-Sem-Fome">Vale Sem Fome</a></p> 
+        </div>
     </footer>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </body>
 </html>
