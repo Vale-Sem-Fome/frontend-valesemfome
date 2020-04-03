@@ -9,6 +9,7 @@
 
 .header {
   height: 100vh;
+  position: relative;
 }
 
 .header .text {
@@ -21,29 +22,48 @@
   align-items: center;
 }
 
+@media only screen and (max-height: 400px) {
+  .img-logo {
+    width: 50%;
+  }
+
+  h1 {
+    font-size: 1.3em;
+  }
+}
 @media only screen and (max-width: 600px) {
+  .header {
+    height: 100vh;
+  }
+
   .img-logo {
     max-width: 100%;
   }
 }
-.form-group {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
+@media only screen and (min-width: 992px) {
+  .header {
+    height: 100vh;
+  }
 }
-
-.form-group input[type=text], .form-group input[type=tel] {
+.form-group input[type=text],
+.form-group input[type=tel] {
   border: 1px solid transparent;
   border-bottom: 1px solid #93A66A;
   background-color: transparent;
   height: 50px;
   width: 100%;
   padding: 0;
+  color: #595959;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .form-group .question-number {
-  color: 700;
+  font-weight: 700;
+}
+
+.inputs-group {
+  width: 100%;
 }
 
 .all-options {
@@ -55,19 +75,100 @@
   padding-bottom: 8px;
 }
 
-.fake-button a, input[type=submit] {
+@media only screen and (max-height: 500px) {
+  .form {
+    margin-top: 30%;
+  }
+
+  .form-group {
+    margin-top: 25%;
+    margin-bottom: 25%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .form-group, .form-buttons {
+    display: flex;
+    align-items: center;
+  }
+
+  .form-group {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .form-buttons {
+    margin-top: 30px;
+  }
+
+  .form-group, .form-group input[type=text],
+.form-group input[type=tel] {
+    font-size: 1.1em;
+  }
+
+  .input-field, .input-field {
+    margin-top: 15px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .form-group {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+  }
+
+  .form-group, .form-group input[type=text],
+.form-group input[type=tel] {
+    font-size: 1.2em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .form .container {
+    width: 60%;
+  }
+
+  .input-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .input-field label {
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .form-group {
+    height: 100vh;
+  }
+
+  .form-buttons {
+    height: 50vh;
+  }
+
+  .form-group {
+    font-size: 1.4em;
+  }
+
+  .form-group input[type=text],
+.form-group input[type=tel] {
+    font-size: 1.2em;
+  }
+}
+.fake-button a {
   color: #F2F2F2;
   text-shadow: 2px 2px 4px #595959;
   box-shadow: 2px 2px 6px #595959;
   font-family: "Anton", sans-serif;
   font-size: 1.875em;
-  letter-spacing: 12%;
+  letter-spacing: 3px;
   text-transform: uppercase;
   background-color: #93A66A;
   height: 50px;
   width: max-content;
   padding: 10px 35px;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .fake-button {
@@ -75,6 +176,7 @@
 }
 
 input[type=submit] {
+  cursor: pointer;
   border: none;
   color: #F2F2F2;
   text-shadow: 2px 2px 4px #595959;
@@ -84,8 +186,9 @@ input[type=submit] {
   letter-spacing: 3px;
   text-transform: uppercase;
   background-color: #93A66A;
-  height: 75px;
+  height: 80px;
   border-radius: 8px;
+  padding: 10px 35px;
 }
 
 .form-buttons {
@@ -95,6 +198,34 @@ input[type=submit] {
   align-content: center;
 }
 
+.fake-group-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+ion-icon {
+  background-color: #93A66A;
+  color: #F2F2F2;
+  font-size: 42px;
+  margin: 5px;
+  box-shadow: 2px 2px 8px #595959;
+}
+
+@media only screen and (max-height: 500px) {
+  .fake-button a {
+    font-size: 1.8em;
+    letter-spacing: 3px;
+    height: 45px;
+    width: max-content;
+    padding: 10px 25px;
+    border-radius: 8px;
+  }
+
+  .fake-button {
+    margin-top: 25px;
+  }
+}
 .footer {
   text-align: center;
   margin-top: 100px;
@@ -127,6 +258,10 @@ body {
 a {
   text-decoration: none;
   color: #93A66A;
+  font-weight: 700;
+}
+
+strong {
   font-weight: 700;
 }
 

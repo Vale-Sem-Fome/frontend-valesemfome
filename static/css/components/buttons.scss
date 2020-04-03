@@ -1,18 +1,19 @@
 @import 'variables.scss';
 
-.fake-button a, input[type=submit]{
-    color: $light-gray;
-    text-shadow: 2px 2px 4px $dark-gray-color;
-    box-shadow: 2px 2px 6px $dark-gray-color;
-    font-family: $font-anton;
+.fake-button a{
+    color: $font-button-color;
+    text-shadow: 2px 2px 4px $text-shadow-color;
+    box-shadow: 2px 2px 6px $box-shadow-color;
+    font-family: $button-font;
     font-size: 1.875em;
-    letter-spacing: 12%;
+    letter-spacing: 3px;
     text-transform: uppercase;
-    background-color: $dark-green-color;
+    background-color: $background-button-color;
     height: 50px;
     width: max-content;
     padding: 10px 35px;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .fake-button {
@@ -20,17 +21,19 @@
 }
 
 input[type=submit]{
+    cursor: pointer;
     border: none;
-    color: $light-gray;
-    text-shadow: 2px 2px 4px $dark-gray-color;
-    box-shadow: 2px 2px 6px $dark-gray-color;
-    font-family: $font-anton;
+    color: $font-button-color;
+    text-shadow: 2px 2px 4px $text-shadow-color;
+    box-shadow: 2px 2px 6px $box-shadow-color;
+    font-family: $button-font;
     font-size: 1.875em;
     letter-spacing: 3px;
     text-transform: uppercase;
-    background-color: $dark-green-color;
-    height: 75px;
+    background-color: $background-button-color;
+    height: 80px;
     border-radius: 8px;
+    padding: 10px 35px;
 }
 
 .form-buttons{
@@ -38,5 +41,36 @@ input[type=submit]{
     display: flex;
     justify-content: center;
     align-content: center;
+
+}
+
+.fake-group-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+ion-icon {
+    background-color: $background-button-color;
+    color: $font-button-color;
+    font-size: 42px;
+    margin: 5px;
+    box-shadow: 2px 2px 8px $box-shadow-color;
+}
+
+@media only screen and (max-height: 500px){
+
+    .fake-button a{
+        font-size: 1.8em;
+        letter-spacing: 3px;
+        height: 45px;
+        width: max-content;
+        padding: 10px 25px;
+        border-radius: 8px;
+    }
+    
+    .fake-button {
+        margin-top: 25px;
+    }
 
 }

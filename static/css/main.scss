@@ -9,7 +9,6 @@
     padding: 0;
     margin: 0;
     outline: 0;
-    // box-sizing: border-box;
 }
 
 html{
@@ -17,17 +16,21 @@ html{
 }
 
 body{
-    background-color: $really-light-gray;
-    font-family: $font-lato;
-    font-weight: $font-light;
-    color: $dark-gray-color;
+    background-color: $background-body;
+    font-family: $font-text;
+    font-weight: $font-weight-light;
+    color: $font-text-color;
 }
 
 a{
     text-decoration: none;
-    color: $dark-green-color;
-    font-weight: $font-strong;
+    color: $link-text-color;
+    font-weight: $font-weight-strong;
 
+}
+
+strong{
+    font-weight: $font-weight-strong;
 }
 
 .container{
@@ -37,6 +40,6 @@ a{
 
 
 h1, h2, h3, h4, h5, h6{
-    font-family: $font-anton;
+    font-family: $headline-font;
     letter-spacing: 2px;
 }
