@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,400;0,700;1,300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,400;0,700;1,300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,400;0,700;1,300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,400;0,700;1,300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,400;0,700;1,300&display=swap");
+
 .img-fluid {
   max-width: 100%;
 }
@@ -60,6 +57,25 @@
 
 .form-group .question-number {
   font-weight: 700;
+}
+
+.form-group .link {
+  text-align: center;
+  padding: 30px;
+}
+
+.all-options .option {
+  width: 100%;
+  display: flex;
+}
+
+.all-options .option label {
+  padding-left: 10px;
+  flex: 80%;
+}
+
+.link a:hover {
+  text-decoration: underline;
 }
 
 .inputs-group {
@@ -236,6 +252,10 @@ ion-icon {
 .footer .container {
   border-top: 1px solid #8C8C8C;
   padding-top: 15px;
+
+}
+
+
 }
 
 * {

@@ -38,7 +38,7 @@
                         <label for="full-name">
                             <span class="question-number">1.</span> Qual seu nome completo? *
                         </label>
-                        <input type="text" id="full-name" placeholder="Reponda aqui...">
+                        <input type="text" id="full-name" placeholder="Responda aqui...">
                         <div class="fake-group-button">
                             <a href="#top"><ion-icon name="arrow-up-outline"></ion-icon></a>
                             <a href="#question2"><ion-icon name="arrow-down-outline"></ion-icon></a>
@@ -48,9 +48,11 @@
                 <div class="form-group" id="question2">
                     <div class="inputs-group">
                         <label for="cpf">
-                            <span class="question-number">2.</span> Qual é o seu CPF? *
+
+                            <span class="question-number">2.</span> Qual é o seu CPF? (11 dígitos) *
                         </label>
-                        <input type="text" id="cpf" placeholder="Exemplo: 00011122233">
+                        <input type="text" id="cpf" placeholder="00011122233">
+
                         <div class="fake-group-button">
                             <a href="#question1"><ion-icon name="arrow-up-outline"></ion-icon></a>
                             <a href="#question3"><ion-icon name="arrow-down-outline"></ion-icon></a>
@@ -62,7 +64,8 @@
                         <label for="whatsapp">
                             <span class="question-number">3.</span> Qual é o seu telefone de contato (WhatsApp)? *
                         </label>
-                        <input type="tel" id="whatsapp" placeholder="Exemplo: (11) 96123-4567">
+
+                        <input type="tel" id="whatsapp" placeholder="(12) 99111-1111">
                         <div class="fake-group-button">
                             <a href="#question2"><ion-icon name="arrow-up-outline"></ion-icon></a>
                             <a href="#question4"><ion-icon name="arrow-down-outline"></ion-icon></a>
@@ -174,23 +177,24 @@
                         </label>
                         <div class="input-field">
                             <label for="cep">CEP:</label>
-                            <input type="text" id="cep" placeholder="Exemplo: 12345678">
+                            <input type="text" id="cep" placeholder="12345678">
                         </div>
                         <div class="input-field">
                             <label for="street">Rua:</label>
-                            <input type="text" id="street" placeholder="Exemplo: Avenida das Flores">
+                            <input type="text" id="street" placeholder="Avenida das Flores">
                         </div>
                         <div class="input-field">
                             <label for="house-number">Nº:</label>
-                            <input type="text" id="house-number" placeholder="Exemplo: 200">
+                            <input type="text" id="house-number" placeholder="200">
                         </div>                     
                         <div class="input-field">
                             <label for="neighborhood">Bairro:</label>
-                            <input type="text" id="neighborhood" placeholder="Exemplo: Campo dos Elíseos">
+                            <input type="text" id="neighborhood" placeholder="Campo dos Elíseos">
                         </div>
                         <div class="input-field">
                             <label for="reference-point">Ponto de Referência:</label>
-                            <input type="text" id="reference-point" placeholder="Exemplo: Na esquina do campo de futebol.">
+                            <input type="text" id="reference-point" placeholder="Na esquina do campo de futebol.">
+
                         </div>
                         <div class="fake-group-button">
                             <a href="#question5"><ion-icon name="arrow-up-outline"></ion-icon></a>
@@ -225,7 +229,7 @@
                                 <div class="other-aws">
                                     <input type="radio" name="financialState" id="other-aws">
                                     <label for="other-aws"> Outro</label>
-                                    <input type="text" id="other-aws" placeholder="Reponda aqui...">
+                                    <input type="text" id="other-aws" placeholder="Responda aqui...">
                                 </div>
                             </div>
                         </div>
@@ -263,9 +267,9 @@
                 </div>
                 <div class="form-group" id="agreement">
                     <div class="inputs-group">
-                        <div class="fake-group-button">
-                        <a href="#question1">Rever minhas Repostas</a>
-                    </div>
+                        <div class="link">
+                            <a href="#question1">Revisar minhas Repostas</a>
+                        </div>
                         <section>
                             <h3>TERMO DE ACEITE</h3>
                             <p>Autorizo receber mensagens com informações e questões sobre
@@ -293,7 +297,7 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <p>powered by <a href="https://github.com/Vale-Sem-Fome">Vale Sem Fome</a></p> 
+            <p>powered by <a class="link" href="https://github.com/Vale-Sem-Fome">Vale Sem Fome</a></p> 
         </div>
     </footer>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>

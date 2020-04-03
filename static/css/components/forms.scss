@@ -1,9 +1,8 @@
 @import 'variables.scss';
 
-
-
-.form-group input[type=text], 
-.form-group input[type=tel]{
+.form-group input[type="text"], 
+.form-group input[type="tel"]{
+  
     border: 1px solid transparent;
     border-bottom: 1px solid $border-input-text-color;
     background-color: transparent;
@@ -60,8 +59,6 @@
         margin-top: 30px;
     }
 
-    .form-group, .form-group input[type=text], 
-    .form-group input[type=tel]{
         font-size: 1.1em;
     }
 
@@ -82,8 +79,10 @@
         align-items: center;
     }
 
+
     .form-group, .form-group input[type=text],
     .form-group input[type=tel]{
+
         font-size: 1.2em;
     }
     
@@ -124,6 +123,7 @@
     .form-group{
         font-size: 1.4em;
     }
+
 
     .form-group input[type=text],
     .form-group input[type=tel]{
