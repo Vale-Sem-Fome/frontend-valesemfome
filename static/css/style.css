@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,400;0,700;1,300&display=swap");
+
 .img-fluid {
   max-width: 100%;
 }
@@ -251,10 +252,10 @@ ion-icon {
 .footer .container {
   border-top: 1px solid #8C8C8C;
   padding-top: 15px;
+
 }
 
-.footer .link:hover {
-  text-decoration: underline;
+
 }
 
 * {

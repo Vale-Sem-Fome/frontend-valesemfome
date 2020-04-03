@@ -2,6 +2,7 @@
 
 .form-group input[type="text"], 
 .form-group input[type="tel"]{
+  
     border: 1px solid transparent;
     border-bottom: 1px solid $border-input-text-color;
     background-color: transparent;
@@ -15,26 +16,6 @@
 
 .form-group .question-number{
     font-weight: $font-weight-strong;
-}
-
-.form-group .link{
-    text-align: center;
-    padding: 30px;
-}
-
-.all-options .option{
-    width: 100%;
-    display: flex;
-}
-
-.all-options .option label{
-    padding-left: 10px;
-    flex: 80%;
-}
-
-
-.link a:hover{
-    text-decoration: underline;
 }
 
 .inputs-group{
@@ -78,8 +59,6 @@
         margin-top: 30px;
     }
 
-    .form-group, .form-group input[type="text"], 
-    .form-group input[type="tel"]{
         font-size: 1.1em;
     }
 
@@ -100,8 +79,10 @@
         align-items: center;
     }
 
-    .form-group, .form-group input[type="text"],
-    .form-group input[type="tel"]{
+
+    .form-group, .form-group input[type=text],
+    .form-group input[type=tel]{
+
         font-size: 1.2em;
     }
     
@@ -143,8 +124,14 @@
         font-size: 1.4em;
     }
 
-    .form-group input[type="text"],
-    .form-group input[type="tel"]{
+
+    .form-group input[type=text],
+    .form-group input[type=tel]{
         font-size: 1.2em;
     }
 }
+
+
+@media only screen and (min-width: 1200px) {
+
+} 
