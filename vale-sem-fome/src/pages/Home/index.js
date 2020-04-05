@@ -55,13 +55,7 @@ export default function Home(props) {
                 cidadao_termo_aceite: (data.termsAgreements === "Aceito") ? true : false
             }
 
-            await Api.post('/create', newUser, {
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Access-Control-Allow-Origin': 'https://valesemfome.netlify.com',
-                    'Access-Control-Allow-Credentials': true,
-                }
-            })
+            await Api.post('/create', newUser)
                 .then(response => {
                     alert(response.data.message);
                     props.history.push("/obrigado")
