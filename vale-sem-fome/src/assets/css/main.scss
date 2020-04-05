@@ -4,6 +4,7 @@
 @import 'components/forms.scss';
 @import 'components/buttons.scss';
 @import 'components/footer.scss';
+@import 'components/alerts.scss';
 
 
 *{
@@ -27,7 +28,6 @@ a{
     text-decoration: none;
     color: $link-text-color;
     font-weight: $font-weight-strong;
-
 }
 
 strong{
@@ -44,3 +44,56 @@ h1, h2, h3, h4, h5, h6{
     font-family: $headline-font;
     letter-spacing: 2px;
 }
+
+.thanks-page{
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.img-container{
+
+    ul{
+        list-style-type: none;
+    }
+
+    ul{
+        padding: 15px;
+    }
+
+    img{
+        margin-bottom: 25px;
+    }
+
+}
+
+@media only screen and (min-width: 768px){
+
+    .thanks-container{
+
+        h1{
+            font-size: 3em;
+        }
+
+        a ion-icon{
+            color: $social-media-icons-color;
+            background-color: transparent;
+        }
+    }
+
+    .img-container{
+    
+        ul{
+            display: flex;
+            justify-content: center;
+        }
+
+        li{
+            margin: 25px;
+        }
+            
+    
+    }
+}
+

@@ -1,0 +1,12 @@
+.error-message{
+    color: $alert-color;
+    display: block;
+    font-size: 0.75em;
+    padding-top: 3px;
+}
+
+.optional-field{
+    color: $border-footer-color;
+    font-size: 0.75em;
+    display: block;
+}

@@ -1,8 +1,9 @@
 @import 'variables.scss';
 
 .form-group input[type="text"], 
-.form-group input[type="tel"]{
-  
+.form-group input[type="tel"],
+.form-group input[type="email"],
+.form-group input[type="date"]{
     border: 1px solid transparent;
     border-bottom: 1px solid $border-input-text-color;
     background-color: transparent;
@@ -12,6 +13,7 @@
     color: $font-text-color;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-family: $font-text;
 }
 
 .form-group .question-number{
@@ -55,11 +57,15 @@
         height: 100vh;
     }
 
-    .form-buttons{
-        margin-top: 30px;
+    .form-group, .form-group input[type="text"],
+    .form-group input[type="tel"],
+    .form-group input[type="email"],
+    .form-group input[type="date"]{
+        font-size: 1.1em;
     }
 
-        font-size: 1.1em;
+    .form-buttons{
+        margin-top: 30px;
     }
 
     .input-field, .input-field{
@@ -80,17 +86,16 @@
     }
 
 
-    .form-group, .form-group input[type=text],
-    .form-group input[type=tel]{
-
+    .form-group, .form-group input[type="text"],
+    .form-group input[type="tel"],
+    .form-group input[type="email"],
+    .form-group input[type="date"]{
         font-size: 1.2em;
     }
     
 }
 
 @media only screen and (min-width: 768px) {
-
-    
 
     .form .container{
         width: 60%;
@@ -106,7 +111,6 @@
         width: 30%;
     }
 
-    
 }
 
 
@@ -124,14 +128,10 @@
         font-size: 1.4em;
     }
 
-
     .form-group input[type=text],
-    .form-group input[type=tel]{
+    .form-group input[type=tel],
+    .form-group input[type="email"],
+    .form-group input[type="date"]{
         font-size: 1.2em;
     }
 }
-
-
-@media only screen and (min-width: 1200px) {
-
-} 
