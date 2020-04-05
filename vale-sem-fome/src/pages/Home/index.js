@@ -17,15 +17,20 @@ export default function Home(props) {
     const [street, setStreet] = useState("");
     const [neighborhood, setNeighborhood] = useState("");
     const [complement, setComplement] = useState("");
+    const [errorsMock, setErrosMock] = useState({ cep: false, street: false, neighborhood: false });
 
     const onSubmit = async data => {
         if (street.length === 0) {
             alert('Digite sua rua!');
+            setErrosMock({ ...errorsMock, street: true });
         } else if (cep.length === 0) {
             alert('Digite seu CEP!');
+            setErrosMock({ ...errorsMock, cep: true });
         } else if (neighborhood.length === 0) {
             alert('Digite seu bairro!')
+            setErrosMock({ ...errorsMock, neighborhood: true });
         } else if (validarCpf(data.document)) {
+            setErrosMock({ cep: false, street: false, neighborhood: false });
             const newUser = {
                 cidadao_nome: data.fullName,
                 cidadao_email: data.email,
@@ -47,7 +52,13 @@ export default function Home(props) {
                 cidadao_cadastro_unico: data.haveRegistry,
                 cidadao_termo_aceite: (data.termsAgreements === "Aceito") ? true : false
             }
-            await Api.post('/create', newUser)
+            await Api.post('/create', newUser, {
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': 'https://saojosesemfome.appspot.com',
+                    'Access-Control-Allow-Credentials': true,
+                }
+            })
                 .then(response => {
                     alert(response.data.message);
                     props.history.push("/obrigado")
@@ -346,7 +357,7 @@ export default function Home(props) {
                                     <span className="question-number">8.</span> Qual é o seu endereço São José dos Campos? *
                                 </label>
                                 <div className="input-field">
-                                    {errors.cep && <span className="error-message">Digite um CEP válido...</span>}
+                                    {errorsMock.cep && <span className="error-message">Digite um CEP válido...</span>}
                                     <label htmlFor="cep">CEP*:</label>
                                     <InputMask
                                         type="text"
@@ -358,7 +369,7 @@ export default function Home(props) {
                                         onChange={getCEP} />
                                 </div>
                                 <div className="input-field">
-                                    {errors.street && <span className="error-message">Campo obrigatório...</span>}
+                                    {errorsMock.street && <span className="error-message">Campo obrigatório...</span>}
                                     <label htmlFor="street">Rua*:</label>
                                     <Input
                                         type="text"
@@ -371,17 +382,17 @@ export default function Home(props) {
                                 {errors.number && <span className="error-message">Campo obrigatório...</span>}
                                 <div className="input-field">
                                     <label htmlFor="house-number">Nº*:</label>
-                                    
+
                                     <Input
                                         type="text"
                                         name="number"
                                         id="house-number"
                                         placeholder="200"
                                         ref={register({ required: true })} />
-                                        
+
                                 </div>
                                 <div className="input-field">
-                                    {errors.neighborhood && <span>Campo obrigatório...</span>}
+                                    {errorsMock.neighborhood && <span>Campo obrigatório...</span>}
                                     <label htmlFor="neighborhood">Bairro*:</label>
                                     <Input
                                         type="text"
