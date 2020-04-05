@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 
 import Routes from '../../routes';
-import '../../assets/css/style.css';
+import '../../assets/css/main.scss';
 
 function App() {
     return (

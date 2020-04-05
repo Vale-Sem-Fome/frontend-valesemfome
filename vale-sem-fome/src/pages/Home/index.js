@@ -84,7 +84,7 @@ export default function Home(props) {
                                 <label htmlFor="full-name">
                                     <span className="question-number">1.</span> Qual seu nome completo? *
                                 </label>
-                                {errors.fullName && <span>É necessário digitar seu nome completo!</span>}
+                                {errors.fullName && <span className="error-message">É necessário digitar seu nome completo!</span>}
                                 <Input
                                     name="fullName"
                                     type="text"
@@ -99,7 +99,7 @@ export default function Home(props) {
                                 <label htmlFor="cpf">
                                     <span className="question-number">2.</span> Qual é o seu CPF? (11 dígitos) *
                                 </label>
-                                {errors.document && <span>É necessário digitar seu CPF!</span>}
+                                {errors.document && <span className="error-message">Campo Obrigatório. Digitar seu CPF:</span>}
                                 <InputMask
                                     type="text"
                                     name="document"
@@ -112,9 +112,9 @@ export default function Home(props) {
                         </div>
                         <div className="form-group" id="question3">
                             <div className="inputs-group">
-                                {errors.email && <span>É necessário digitar seu Email!</span>}
+                                {errors.email && <span className="error-message">Você precisa digitar um e-mail válido...</span>}
                                 <label htmlFor="email">
-                                    <span className="question-number">3.</span> Qual seu e-mail?
+                                    <span className="question-number">3.</span> Qual é o seu e-mail?
                                 </label>
                                 <Input
                                     type="email"
@@ -122,16 +122,16 @@ export default function Home(props) {
                                     id="email"
                                     placeholder="Responda aqui..."
                                     ref={register()} />
-                                <label htmlFor="email"></label>
+                                <label htmlFor="email" className="optional-field">Esse campo é opcional.</label>
                                 <FakeGroupButton before="question2" after="question4" />
                             </div>
                         </div>
                         <div className="form-group" id="question4">
                             <div className="inputs-group">
-                                {errors.birthday && <span>É necessário digitar seu Email!</span>}
                                 <label htmlFor="birthday">
                                     <span className="question-number">4.</span> Data de Nascimento: *
                                 </label>
+                                {errors.birthday && <span className="error-message">Você não preencheu com a sua data de nascimento...</span>}
                                 <Input
                                     type="date"
                                     name="birthday"
@@ -145,7 +145,7 @@ export default function Home(props) {
                                 <label htmlFor="whatsapp">
                                     <span className="question-number">5.</span> Qual é o seu telefone de contato (WhatsApp)? *
                                 </label>
-                                {errors.phone && <span>Telefone</span>}
+                                {errors.phone && <span className="error-message">Digite um número de telefone válido...</span>}
                                 <InputMask
                                     type="text"
                                     name="phone"
@@ -158,10 +158,10 @@ export default function Home(props) {
                         </div>
                         <div className="form-group" id="question6">
                             <div className="inputs-group">
-                                {errors.residents && <span>Residentes</span>}
                                 <label>
                                     <span className="question-number">6.</span> Quantas pessoas vivem na sua casa? *
                                 </label>
+                                {errors.residents && <span className="error-message">Campo obrigatório...</span>}
                                 <div className="all-options">
                                     <div className="option">
                                         <Input
@@ -268,10 +268,10 @@ export default function Home(props) {
                         </div>
                         <div className="form-group" id="question7">
                             <div className="inputs-group">
-                                {errors.region && <span>Região</span>}
                                 <label>
                                     <span className="question-number">7.</span> Qual região da cidade fica sua residência? *
                                 </label>
+                                {errors.region && <span className="error-message">Campo obrigatório...</span>}
                                 <div className="all-options">
                                     <div className="option">
                                         <Input
@@ -346,8 +346,8 @@ export default function Home(props) {
                                     <span className="question-number">8.</span> Qual é o seu endereço São José dos Campos? *
                                 </label>
                                 <div className="input-field">
-                                    {errors.cep && <span>CEP</span>}
-                                    <label htmlFor="cep">CEP:</label>
+                                    {errors.cep && <span className="error-message">Digite um CEP válido...</span>}
+                                    <label htmlFor="cep">CEP*:</label>
                                     <InputMask
                                         type="text"
                                         name="cep"
@@ -358,8 +358,8 @@ export default function Home(props) {
                                         onChange={getCEP} />
                                 </div>
                                 <div className="input-field">
-                                    {errors.street && <span>Rua</span>}
-                                    <label htmlFor="street">Rua:</label>
+                                    {errors.street && <span className="error-message">Campo obrigatório...</span>}
+                                    <label htmlFor="street">Rua*:</label>
                                     <Input
                                         type="text"
                                         name="street"
@@ -368,19 +368,21 @@ export default function Home(props) {
                                         value={street}
                                         onChange={(event) => setStreet(event.target.value)} />
                                 </div>
+                                {errors.number && <span className="error-message">Campo obrigatório...</span>}
                                 <div className="input-field">
-                                    {errors.number && <span>Número</span>}
-                                    <label htmlFor="house-number">Nº:</label>
+                                    <label htmlFor="house-number">Nº*:</label>
+                                    
                                     <Input
                                         type="text"
                                         name="number"
                                         id="house-number"
                                         placeholder="200"
                                         ref={register({ required: true })} />
+                                        
                                 </div>
                                 <div className="input-field">
-                                    {errors.neighborhood && <span>Bairro</span>}
-                                    <label htmlFor="neighborhood">Bairro:</label>
+                                    {errors.neighborhood && <span>Campo obrigatório...</span>}
+                                    <label htmlFor="neighborhood">Bairro*:</label>
                                     <Input
                                         type="text"
                                         name="neighborhood"
@@ -390,7 +392,6 @@ export default function Home(props) {
                                         onChange={(event) => setNeighborhood(event.target.value)} />
                                 </div>
                                 <div className="input-field">
-                                    {errors.referencePoint && <span>Referência</span>}
                                     <label htmlFor="reference-point">Ponto de Referência:</label>
                                     <Input
                                         type="text"
@@ -401,7 +402,6 @@ export default function Home(props) {
                                 </div>
 
                                 <div className="input-field">
-                                    {errors.complement && <span>Referência</span>}
                                     <label htmlFor="reference-point">Complemento:</label>
                                     <Input
                                         type="text"
@@ -417,11 +417,11 @@ export default function Home(props) {
                         </div>
                         <div className="form-group" id="question9">
                             <div className="inputs-group">
-                                {errors.situationMoment && <span>Situação</span>}
                                 <label>
-                                    <span className="question-number">9.</span>
+                                    <span className="question-number">9. </span>
                                     Como você considera sua situação neste momento? *
                                 </label>
+                                {errors.situationMoment && <span className="error-message">Campo Obrigatório...</span>}
                                 <div className="all-options">
                                     <div className="option">
                                         <Input
@@ -473,7 +473,8 @@ export default function Home(props) {
                                                 name="situationMomentOther"
                                                 id="other-aws"
                                                 placeholder="Responda aqui..."
-                                                ref={register} />
+                                                ref={register}
+                                            />
                                         </div>
                                     </div>
                                 </div>
@@ -482,11 +483,11 @@ export default function Home(props) {
                         </div>
                         <div className="form-group" id="question10">
                             <div className="inputs-group">
-                                {errors.haveRegistry && <span>Registro</span>}
                                 <label>
                                     <span className="question-number">10.</span> Por último, você (sua família) já possuem cadastro único? *
                                 </label>
-                                <span>A entrega da doação não depende de nenhum cadastro prévio.</span>
+                                {errors.haveRegistry && <span className="error-message">Registro</span>}
+                                <span className="optional-field">A entrega da doação não depende de nenhum cadastro prévio.</span>
                                 <div className="all-options">
                                     <div className="option">
                                         <Input
@@ -525,7 +526,6 @@ export default function Home(props) {
                                     <a href="#question1">Revisar minhas Repostas</a>
                                 </div>
                                 <section>
-                                    {errors.termsAgreements && <span>Termo</span>}
                                     <h3>TERMO DE ACEITE</h3>
                                     <p>
                                         Autorizo receber mensagens com informações e questões sobre
@@ -533,6 +533,7 @@ export default function Home(props) {
                                         para fins estatísticos nos termos da Lei Geral de Proteção de Dados. *
                                     </p>
                                 </section>
+                                {errors.termsAgreements && <span className="error-message">Campo obrigatório...</span>}
                                 <div className="all-options">
                                     <div className="option">
                                         <Input
