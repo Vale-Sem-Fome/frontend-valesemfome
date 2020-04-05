@@ -1,2 +1,6 @@
 export { default as App } from './App'
-export { default as Title } from './Title'
+export { default as Input } from './Input'
+export { default as Header } from './FormRecipients/Header'
+export { default as FakeGroupButton } from './FormRecipients/FakeGroupButton'
+export { default as Footer } from './FormRecipients/Footer'
+export { default as InputMask } from './InputMask'
