@@ -1,13 +1,19 @@
 import {
-    HelloWorld
+    Home,
+    Obrigado
 } from './pages'
 
 export default {
     routes: [
         {
-            name: 'HelloWorld',
-            path: '/',
-            component: HelloWorld
+            name: 'Obrigado',
+            path: '/obrigado',
+            component: Obrigado
+        },
+        {
+            name: 'Home',
+            path: '*',
+            component: Home
         }
     ]
 }
