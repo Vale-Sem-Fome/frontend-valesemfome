@@ -55,10 +55,6 @@ export default function Home(props) {
                 cidadao_termo_aceite: (data.termsAgreements === "Aceito") ? true : false
             }
 
-            var params = new URLSearchParams();
-            params.append('cpf', $("#cpfCompetidor1").val());
-            params.append('evento', $("#idEvento").val());
-
             await Api.post('/create', newUser, {
                 headers: {
                     'Content-Type': 'application/json',
