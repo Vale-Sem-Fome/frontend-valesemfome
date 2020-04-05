@@ -20,15 +20,17 @@ export default function Home(props) {
     const [errorsMock, setErrosMock] = useState({ cep: false, street: false, neighborhood: false });
 
     const onSubmit = async data => {
+        setErrosMock({
+            cep: (cep.length === 0) ? true : false,
+            street: (street.length === 0) ? true : false,
+            neighborhood: (neighborhood.length === 0) ? true : false
+        });
         if (street.length === 0) {
             alert('Digite sua rua!');
-            setErrosMock({ ...errorsMock, street: true });
         } else if (cep.length === 0) {
             alert('Digite seu CEP!');
-            setErrosMock({ ...errorsMock, cep: true });
         } else if (neighborhood.length === 0) {
             alert('Digite seu bairro!')
-            setErrosMock({ ...errorsMock, neighborhood: true });
         } else if (validarCpf(data.document)) {
             setErrosMock({ cep: false, street: false, neighborhood: false });
             const newUser = {
@@ -52,10 +54,15 @@ export default function Home(props) {
                 cidadao_cadastro_unico: data.haveRegistry,
                 cidadao_termo_aceite: (data.termsAgreements === "Aceito") ? true : false
             }
+
+            var params = new URLSearchParams();
+            params.append('cpf', $("#cpfCompetidor1").val());
+            params.append('evento', $("#idEvento").val());
+
             await Api.post('/create', newUser, {
                 headers: {
                     'Content-Type': 'application/json',
-                    'Access-Control-Allow-Origin': 'https://saojosesemfome.appspot.com',
+                    'Access-Control-Allow-Origin': 'https://valesemfome.netlify.com',
                     'Access-Control-Allow-Credentials': true,
                 }
             })
