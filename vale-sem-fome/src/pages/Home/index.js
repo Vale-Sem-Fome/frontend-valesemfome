@@ -389,7 +389,7 @@ export default function Home(props) {
 
                                 </div>
                                 <div className="input-field">
-                                    {errorsMock.neighborhood && <span>Campo obrigatório...</span>}
+                                    {errorsMock.neighborhood && <span className="error-message">Campo obrigatório...</span>}
                                     <label htmlFor="neighborhood">Bairro*:</label>
                                     <Input
                                         type="text"
