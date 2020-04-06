@@ -55,7 +55,11 @@ export default function Home(props) {
                 cidadao_termo_aceite: (data.termsAgreements === "Aceito") ? true : false
             }
 
-            await Api.post('/create', newUser)
+            await Api.post('/create', newUser, {
+                headers: {
+                    'Access-Control-Allow-Origin': '*',
+                }
+            })
                 .then(response => {
                     alert(response.data.message);
                     props.history.push("/obrigado")
