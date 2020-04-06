@@ -57,7 +57,7 @@ export default function Home(props) {
 
             await Api.post('/create', newUser, {
                 headers: {
-                    'Access-Control-Allow-Origin': '*',
+                    'Access-Control-Allow-Origin': 'https://valesemfome.netlify.com',
                 }
             })
                 .then(response => {
