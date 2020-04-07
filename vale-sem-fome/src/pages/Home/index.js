@@ -500,7 +500,7 @@ export default function Home(props) {
                                 <label>
                                     <span className="question-number">10.</span> Por último, você (sua família) já possuem cadastro único? *
                                 </label>
-                                {errors.haveRegistry && <span className="error-message">Registro</span>}
+                                {errors.haveRegistry && <span className="error-message">Campo obrigatório...</span>}
                                 <span className="optional-field">A entrega da doação não depende de nenhum cadastro prévio.</span>
                                 <div className="all-options">
                                     <div className="option">
@@ -543,7 +543,7 @@ export default function Home(props) {
                                     <h3>TERMO DE ACEITE</h3>
                                     <p>
                                         Autorizo receber mensagens com informações e questões sobre
-                                        <strong>MOVIMENTO COVID19 SJC SEM FOME</strong> e que meus dados sejam armazenados
+                                        <strong> MOVIMENTO COVID19 SJC SEM FOME</strong> e que meus dados sejam armazenados
                                         para fins estatísticos nos termos da Lei Geral de Proteção de Dados. *
                                     </p>
                                 </section>
