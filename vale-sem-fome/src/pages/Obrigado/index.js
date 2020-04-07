@@ -12,7 +12,7 @@ export default function Obrigado() {
         <div className="container">
             <main className="thanks-page">
                 <div className="thanks-container">
-                    <p>Obrigada por nos contar um pouco mais sobre você e sua família!</p>
+                    <p>Nós agradecemos por nos contar um pouco mais sobre você e sua família!</p>
                     <h1>Você é muito importante para nós!</h1>
                     <p>
                         <strong>Lembrando:</strong> este cadastro não garante o 
