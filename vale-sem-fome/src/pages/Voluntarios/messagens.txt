@@ -1,0 +1,14 @@
+Mensagens:
+
+Template
+Erro: Mensagem 
+
+CPF: É necessário digitar seu CPF!
+
+Email: Você precisa digitar um e-mail válido...
+
+Data de Nascimento: Você não colocou sua data de nascimento...
+
+Telefone: Digite um número de telefone válido...
+
+Região da Cidade, Moradores, Termo de Aceite: Campo obrigatório!
