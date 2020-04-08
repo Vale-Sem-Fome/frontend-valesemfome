@@ -54,11 +54,7 @@ export default function Home(props) {
                 voluntario_periodo_ajuda: data.scheduleTime,
                 voluntario_forma_de_ajuda: data.jobArea,
                 voluntario_ja_cadastrado: data.isRegister,
-                voluntario_dias_ajuda: `${(data.monday)?data.monday:''} 
-                                        ${(data.tuesday)?data.tuesday:''} 
-                                        ${(data.wednesday)?data.wednesday:''} 
-                                        ${(data.thursday)?data.thursday:''}
-                                        ${(data.friday)?data.friday:''}`,
+                voluntario_dias_ajuda: `${(data.monday) ? data.monday:''} ${(data.tuesday) ? data.tuesday:''} ${(data.wednesday) ? data.wednesday:''} ${(data.thursday) ? data.thursday:''} ${(data.friday) ? data.friday:''}`,
                 voluntario_termo_aceite: (data.termsAgreements === "Aceito") ? true : false,
             }
 
