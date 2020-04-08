@@ -331,7 +331,7 @@ export default function Home(props) {
                                             name="monday"
                                             id="monday"
                                             value="Segunda"
-                                            ref={register({ required: true })} />
+                                            ref={register()} />
                                         <label htmlFor="monday"> Segunda</label>
                                     </div>
                                     <div className="option">
@@ -340,7 +340,7 @@ export default function Home(props) {
                                             name="tuesday"
                                             id="tuesday"
                                             value="Terça"
-                                            ref={register({ required: true })} />
+                                            ref={register()} />
                                         <label htmlFor="tuesday"> Terça</label>
                                     </div>
                                     <div className="option">
@@ -349,7 +349,7 @@ export default function Home(props) {
                                             name="wednesday"
                                             id="wednesday"
                                             value="Quarta"
-                                            ref={register({ required: true })} />
+                                            ref={register()} />
                                         <label htmlFor="wednesday"> Quarta</label>
                                     </div>
                                     <div className="option">
@@ -358,7 +358,7 @@ export default function Home(props) {
                                             name="thursday"
                                             id="thursday"
                                             value="Quinta"
-                                            ref={register({ required: true })} />
+                                            ref={register()} />
                                         <label htmlFor="thursday"> Quinta</label>
                                     </div>
                                     <div className="option">
@@ -367,7 +367,7 @@ export default function Home(props) {
                                             name="friday"
                                             id="friday"
                                             value="Sexta"
-                                            ref={register({ required: true })} />
+                                            ref={register()} />
                                         <label htmlFor="friday"> Sexta</label>
                                     </div>
                                 </div>
