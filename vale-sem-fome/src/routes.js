@@ -1,10 +1,22 @@
 import {
     Home,
-    Obrigado
+    Obrigado,
+    Voluntarios,
+    ObrigadoVoluntario
 } from './pages'
 
 export default {
     routes: [
+        {
+            name: 'Voluntarios',
+            path: '/voluntarios',
+            component: Voluntarios
+        },
+        {
+            name: 'ObrigadoVoluntario',
+            path: '/obrigado/voluntario',
+            component: ObrigadoVoluntario
+        },
         {
             name: 'Obrigado',
             path: '/obrigado',
