@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {
-    Header,
+    HeaderVolunteer,
     Footer,
     Input,
     FakeGroupButton,
@@ -54,7 +54,11 @@ export default function Home(props) {
                 voluntario_periodo_ajuda: data.scheduleTime,
                 voluntario_forma_de_ajuda: data.jobArea,
                 voluntario_ja_cadastrado: data.isRegister,
-                voluntario_dias_ajuda: `${data.monday} ${data.tuesday} ${data.wednesday} ${data.thursday} ${data.friday}`,
+                voluntario_dias_ajuda: `${(data.monday)?data.monday:''} 
+                                        ${(data.tuesday)?data.tuesday:''} 
+                                        ${(data.wednesday)?data.wednesday:''} 
+                                        ${(data.thursday)?data.thursday:''}
+                                        ${(data.friday)?data.friday:''}`,
                 voluntario_termo_aceite: (data.termsAgreements === "Aceito") ? true : false,
             }
 
@@ -92,7 +96,7 @@ export default function Home(props) {
     return (
         <div>
             <main className="main">
-                <Header />
+                <HeaderVolunteer />
                 <form onSubmit={handleSubmit(onSubmit)} className="form" id="form">
                     <div className="container">
                         <div className="form-group" id="question1">
