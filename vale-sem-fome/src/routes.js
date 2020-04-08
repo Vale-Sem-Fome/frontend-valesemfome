@@ -24,7 +24,7 @@ export default {
         },
         {
             name: 'Home',
-            path: '*',
+            path: '/',
             component: Home
         }
     ]
