@@ -12,16 +12,20 @@ export default function Obrigado() {
         <div className="container">
             <main className="thanks-page">
                 <div className="thanks-container">
-                    <p>Obrigada por nos contar um pouco mais sobre você e sua família!</p>
+                    <p>Obrigada por nos fazer parte desse movimento!</p>
                     <h1>Você é muito importante para nós!</h1>
-                    <p>
-                        <strong>Lembrando:</strong> este cadastro não garante o
-                        recebimento dos alimentos, mas vamos
-                        nos esforçar ao máximo para atender a todos.
-                    </p>
                     <div className="img-container">
                         <Images images={images} />
                     </div>
+                </div>
+                <div className="social-media">
+                    <p>Nos acompanhe pelas redes sociais!</p>
+                    <a href="https://www.instagram.com/sjcsemfome/">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <a href="https://www.facebook.com/sjcsemfome/">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
                 </div>
             </main>
         </div>
