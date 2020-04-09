@@ -35,14 +35,14 @@ export default function Home(props) {
             alert('Digite seu bairro!')
         } else if (city.length === 0) {
             alert('Digite sua cidade!')
-        } else if(validarCpf(data.document)) {
+        } else if (validarCpf(data.document)) {
             setErrosMock({ cep: false, street: false, neighborhood: false, city: false });
 
             const newUser = {
                 voluntario_nome: data.fullName,
                 voluntario_email: data.email,
                 voluntario_celular: data.phone,
-                valuntario_cpf: data.document,
+                voluntario_cpf: data.document,
                 voluntario_endereco_cep: cep,
                 voluntario_endereco: street,
                 voluntario_endereco_numero: data.number,
@@ -56,7 +56,7 @@ export default function Home(props) {
                 voluntario_periodo_ajuda: data.scheduleTime,
                 voluntario_forma_de_ajuda: data.jobArea,
                 voluntario_ja_cadastrado: data.isRegister,
-                voluntario_dias_ajuda: `${(data.monday) ? data.monday:''} ${(data.tuesday) ? data.tuesday:''} ${(data.wednesday) ? data.wednesday:''} ${(data.thursday) ? data.thursday:''} ${(data.friday) ? data.friday:''}`,
+                voluntario_dias_ajuda: `${(data.monday) ? data.monday : ''} ${(data.tuesday) ? data.tuesday : ''} ${(data.wednesday) ? data.wednesday : ''} ${(data.thursday) ? data.thursday : ''} ${(data.friday) ? data.friday : ''}`,
                 voluntario_termo_aceite: (data.termsAgreements === "Aceito") ? true : false,
             }
 

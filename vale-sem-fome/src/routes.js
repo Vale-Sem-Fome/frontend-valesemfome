@@ -9,11 +9,6 @@ import {
 export default {
     routes: [
         {
-            name: 'PageNotFound',
-            path: '/404',
-            component: PageNotFound
-        },
-        {
             name: 'Voluntarios',
             path: '/voluntarios',
             component: Voluntarios
@@ -32,6 +27,11 @@ export default {
             name: 'Home',
             path: '/',
             component: Home
-        }
+        },
+        {
+            name: 'PageNotFound',
+            path: '*',
+            component: PageNotFound
+        },
     ]
 }
