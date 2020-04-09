@@ -22,7 +22,7 @@ export default function Header() {
                     </div>
                 </section>
                 <div className="fake-button">
-                    <a href="#form">Começar!</a>
+                    <a href="#form">Ajudar!</a>
                 </div>
             </div>
         </header>
