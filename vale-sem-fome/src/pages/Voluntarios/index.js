@@ -10,8 +10,10 @@ import { useForm } from 'react-hook-form'
 import validarCpf from 'validar-cpf'
 import Api from '../../services/api'
 import Cep from '../../services/cep'
+const titlePage = "Cadastro de Voluntários";
 
 export default function Home(props) {
+    document.title = titlePage;
     const { register, handleSubmit, errors } = useForm()
     const [cep, setCep] = useState("");
     const [street, setStreet] = useState("");

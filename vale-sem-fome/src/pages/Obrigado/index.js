@@ -1,7 +1,9 @@
 import React from 'react'
 import { Images } from '../../components'
+const titlePage = "Você é muito importante para nós!";
 
 export default function Obrigado() {
+    document.title = titlePage;
     const images = [
         "/images/instagram_pics/01-sjc-sem-fome.jpg",
         "/images/instagram_pics/02-sjc-sem-fome.jpg",

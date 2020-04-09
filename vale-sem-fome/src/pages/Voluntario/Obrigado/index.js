@@ -1,7 +1,9 @@
 import React from 'react'
 import { Images } from '../../../components'
+const titlePage = "Seu trabalho é muito importante para eles!"
 
 export default function Obrigado() {
+    document.title = titlePage;
     const images = [
         "/images/instagram_pics/01-sjc-sem-fome.jpg",
         "/images/instagram_pics/02-sjc-sem-fome.jpg",
@@ -12,8 +14,8 @@ export default function Obrigado() {
         <div className="container">
             <main className="thanks-page">
                 <div className="thanks-container">
-                    <p>Obrigada por nos fazer parte desse movimento!</p>
-                    <h1>Você é muito importante para nós!</h1>
+                    <p>Obrigada por fazer parte desse movimento!</p>
+                    <h1>Seu trabalho é muito importante para eles!</h1>
                     <div className="img-container">
                         <Images images={images} />
                     </div>
