@@ -2,11 +2,17 @@ import {
     Home,
     Obrigado,
     Voluntarios,
-    ObrigadoVoluntario
+    ObrigadoVoluntario,
+    PageNotFound
 } from './pages'
 
 export default {
     routes: [
+        {
+            name: 'PageNotFound',
+            path: '/404',
+            component: PageNotFound
+        },
         {
             name: 'Voluntarios',
             path: '/voluntarios',

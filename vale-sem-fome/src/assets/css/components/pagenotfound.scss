@@ -1,0 +1,36 @@
+.pagenotfound{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+
+    header{
+        padding-top: 5%;
+    }
+
+    .row{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .row div:nth-child(2){
+        margin-top: 35px;
+    }
+
+}
+
+@media only screen  and (min-width:768px){
+
+    .pagenotfound header{
+        padding-top: 5%;
+        align-items: center;
+
+        .img-logo{
+            width: 50%;
+        }
+
+    }
+
+}
