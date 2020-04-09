@@ -10,10 +10,8 @@ export default function Header() {
                 </div>
                 <section>
                     <div className="text">
-                        <h1>
-                            CADASTRO DE VOLUNTÁRIOS PARA KITS E ENTREGAS
-                            MOVIMENTO COVID19 SJC SEM FOME
-                        </h1>
+                        <h1>CADASTRO DE VOLUNTÁRIOS PARA KITS E ENTREGAS</h1>
+                        <h3>MOVIMENTO COVID19 SJC SEM FOME</h3>
                         <p>
                             <strong>Importante:</strong> Precisamos de ajuda de novos voluntários para 
                             montagens dos kits de alimentos e também para realização de 

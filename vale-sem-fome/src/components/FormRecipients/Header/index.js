@@ -10,10 +10,8 @@ export default function Header() {
                 </div>
                 <section>
                     <div className="text">
-                        <h1>
-                            CADASTRO DE FAMÍLIAS
-                            MOVIMENTO COVID19 SJC SEM FOME
-                            </h1>
+                        <h1>CADASTRO DE FAMÍLIAS</h1>
+                        <h3>MOVIMENTO COVID19 SJC SEM FOME</h3>
                         <p>
                             <strong>Importante:</strong> este cadastro não garante o
                                 recebimento dos alimentos, mas vamos

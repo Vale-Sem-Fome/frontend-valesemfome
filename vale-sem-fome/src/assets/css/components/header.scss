@@ -7,10 +7,21 @@
 .header{
     height: 100vh;
     position: relative;
-}
 
-.header .text{
-    text-align: center;
+    .text{
+        text-align: center;
+    }
+
+    
+    h3{
+        font-family: inherit;
+        color: $secundary-font-text-color;
+    }
+
+    .img-logo{
+        width: 70%;
+    }
+
 }
 
 .header, .logos, .fake-button{
@@ -19,7 +30,9 @@
     align-items: center;
 }
 
+
 @media only screen and (max-height: 400px){
+
     .img-logo{
         width: 50%;
     }
@@ -46,8 +59,3 @@
         height: 100vh;
     }
 }
-
-
-@media only screen and (min-width: 1200px) {
-
-} 

@@ -11,8 +11,11 @@ import validarCpf from 'validar-cpf'
 import Api from '../../services/api'
 import Cep from '../../services/cep'
 
+const titlePage = "Cadastro de Beneficiários";
+
 export default function Home(props) {
-    const { register, handleSubmit, errors } = useForm()
+    document.title = titlePage;
+    const { register, handleSubmit, errors } = useForm();
     const [cep, setCep] = useState("");
     const [street, setStreet] = useState("");
     const [neighborhood, setNeighborhood] = useState("");
