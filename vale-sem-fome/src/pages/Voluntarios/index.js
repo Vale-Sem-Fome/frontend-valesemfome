@@ -7,6 +7,7 @@ import {
     InputMask
 } from '../../components'
 import { useForm } from 'react-hook-form'
+import validarCpf from 'validar-cpf'
 import Api from '../../services/api'
 import Cep from '../../services/cep'
 
@@ -34,13 +35,14 @@ export default function Home(props) {
             alert('Digite seu bairro!')
         } else if (city.length === 0) {
             alert('Digite sua cidade!')
-        } else {
+        } else if(validarCpf(data.document)) {
             setErrosMock({ cep: false, street: false, neighborhood: false, city: false });
 
             const newUser = {
                 voluntario_nome: data.fullName,
                 voluntario_email: data.email,
                 voluntario_celular: data.phone,
+                valuntario_cpf: data.document,
                 voluntario_endereco_cep: cep,
                 voluntario_endereco: street,
                 voluntario_endereco_numero: data.number,
@@ -70,6 +72,8 @@ export default function Home(props) {
                     props.history.push("/obrigado/voluntario")
                 })
                 .catch(error => alert(error.response.data.message));
+        } else {
+            alert("CPF inválido!");
         }
     }
 
@@ -112,8 +116,24 @@ export default function Home(props) {
                         </div>
                         <div className="form-group" id="question2">
                             <div className="inputs-group">
+                                <label htmlFor="cpf">
+                                    <span className="question-number">2.</span> Qual é o seu CPF? (11 dígitos) *
+                                </label>
+                                {errors.document && <span className="error-message">Campo Obrigatório. Digitar seu CPF:</span>}
+                                <InputMask
+                                    type="text"
+                                    name="document"
+                                    id="cpf"
+                                    placeholder="000.111.222-33"
+                                    mask="999.999.999-99"
+                                    inputRef={register({ required: true, minLength: 11, maxLength: 14 })} />
+                                <FakeGroupButton before="question1" after="question3" />
+                            </div>
+                        </div>
+                        <div className="form-group" id="question3">
+                            <div className="inputs-group">
                                 <label htmlFor="whatsapp">
-                                    <span className="question-number">2.</span> Qual é o seu telefone de contato (WhatsApp)? *
+                                    <span className="question-number">3.</span> Qual é o seu telefone de contato (WhatsApp)? *
                                 </label>
                                 {errors.phone && <span className="error-message">Digite um número de telefone válido...</span>}
                                 <InputMask
@@ -123,14 +143,14 @@ export default function Home(props) {
                                     mask="(99) 99999-9999"
                                     placeholder="(12) 99111-1111"
                                     inputRef={register({ required: true, minLength: 14, maxLength: 15 })} />
-                                <FakeGroupButton before="question1" after="question3" />
+                                <FakeGroupButton before="question2" after="question4" />
                             </div>
                         </div>
-                        <div className="form-group" id="question3">
+                        <div className="form-group" id="question4">
                             <div className="inputs-group">
                                 {errors.email && <span className="error-message">Você precisa digitar um e-mail válido...</span>}
                                 <label htmlFor="email">
-                                    <span className="question-number">3.</span> Qual é o seu e-mail?
+                                    <span className="question-number">4.</span> Qual é o seu e-mail?
                                 </label>
                                 <Input
                                     type="email"
@@ -139,13 +159,13 @@ export default function Home(props) {
                                     placeholder="Responda aqui..."
                                     ref={register()} />
                                 <label htmlFor="email" className="optional-field">Esse campo é opcional.</label>
-                                <FakeGroupButton before="question2" after="question4" />
+                                <FakeGroupButton before="question3" after="question5" />
                             </div>
                         </div>
-                        <div className="form-group" id="question4">
+                        <div className="form-group" id="question5">
                             <div className="inputs-group">
                                 <label htmlFor="birthday">
-                                    <span className="question-number">4.</span> Data de Nascimento: *
+                                    <span className="question-number">5.</span> Data de Nascimento: *
                                 </label>
                                 {errors.birthday && <span className="error-message">Você não preencheu com a sua data de nascimento...</span>}
                                 <Input
@@ -153,13 +173,13 @@ export default function Home(props) {
                                     name="birthday"
                                     id="birthday"
                                     ref={register({ required: true, maxLength: 10 })} />
-                                <FakeGroupButton before="question3" after="question5" />
+                                <FakeGroupButton before="question4" after="question6" />
                             </div>
                         </div>
-                        <div className="form-group" id="question5">
+                        <div className="form-group" id="question6">
                             <div className="inputs-group">
                                 <label>
-                                    <span className="question-number">5.</span> Qual frente você pode ajudar? *
+                                    <span className="question-number">6.</span> Qual frente você pode ajudar? *
                                 </label>
                                 {errors.jobArea && <span className="error-message">Campo obrigatório...</span>}
                                 <div className="all-options">
@@ -191,13 +211,13 @@ export default function Home(props) {
                                         <label htmlFor="opt3"> Ambos</label>
                                     </div>
                                 </div>
-                                <FakeGroupButton before="question4" after="question6" />
+                                <FakeGroupButton before="question5" after="question7" />
                             </div>
                         </div>
-                        <div className="form-group" id="question6">
+                        <div className="form-group" id="question7">
                             <div className="inputs-group">
                                 <label htmlFor="address">
-                                    <span className="question-number">6.</span> Onde você mora? *
+                                    <span className="question-number">7.</span> Onde você mora? *
                                 </label>
                                 <div className="input-field">
                                     {errorsMock.cep && <span className="error-message">Digite um CEP válido...</span>}
@@ -277,13 +297,13 @@ export default function Home(props) {
                                         onChange={(event) => setComplement(event.target.value)} />
                                 </div>
 
-                                <FakeGroupButton before="question5" after="question7" />
+                                <FakeGroupButton before="question6" after="question8" />
                             </div>
                         </div>
-                        <div className="form-group" id="question7">
+                        <div className="form-group" id="question8">
                             <div className="inputs-group">
                                 <label>
-                                    <span className="question-number">7. </span>
+                                    <span className="question-number">8. </span>
                                     Você já havia se cadastrado antes como voluntários do Movimento Covid19 SJC SEM FOME? *
                                 </label>
                                 {errors.isRegister && <span className="error-message">Campo Obrigatório...</span>}
@@ -316,13 +336,13 @@ export default function Home(props) {
                                         <label htmlFor="op3-isRegister"> Não me lembro.</label>
                                     </div>
                                 </div>
-                                <FakeGroupButton before="question6" after="question8" />
+                                <FakeGroupButton before="question7" after="question9" />
                             </div>
                         </div>
-                        <div className="form-group" id="question8">
+                        <div className="form-group" id="question9">
                             <div className="inputs-group">
                                 <label>
-                                    <span className="question-number">8.</span> Quais dias na semana você poderia ajudar? (selecione quantos quiser) *
+                                    <span className="question-number">9.</span> Quais dias na semana você poderia ajudar? (selecione quantos quiser) *
                                 </label>
                                 <div className="all-options">
                                     <div className="option">
@@ -371,13 +391,13 @@ export default function Home(props) {
                                         <label htmlFor="friday"> Sexta</label>
                                     </div>
                                 </div>
-                                <FakeGroupButton before="question7" after="question9" />
+                                <FakeGroupButton before="question8" after="question10" />
                             </div>
                         </div>
-                        <div className="form-group" id="question9">
+                        <div className="form-group" id="question10">
                             <div className="inputs-group">
                                 <label>
-                                    <span className="question-number">9.</span> Qual período do dia você poderia ajudar? *
+                                    <span className="question-number">10.</span> Qual período do dia você poderia ajudar? *
                                 </label>
                                 {errors.scheduleTime && <span className="error-message">Registro</span>}
                                 <div className="all-options">
@@ -418,7 +438,7 @@ export default function Home(props) {
                                         <label htmlFor="op4-scheduleTime"> Outro</label>
                                     </div>
                                 </div>
-                                <FakeGroupButton before="question8" after="agreement" />
+                                <FakeGroupButton before="question9" after="agreement" />
                             </div>
                         </div>
                         <div className="form-group" id="agreement">
@@ -430,7 +450,7 @@ export default function Home(props) {
                                     <h3>TERMO DE ACEITE</h3>
                                     <p>
                                         Autorizo receber mensagens com informações e questões sobre
-                                        <strong>MOVIMENTO COVID19 SJC SEM FOME</strong> e que meus dados sejam armazenados
+                                        <strong> MOVIMENTO COVID19 SJC SEM FOME</strong> e que meus dados sejam armazenados
                                         para fins estatísticos nos termos da Lei Geral de Proteção de Dados. *
                                     </p>
                                 </section>
