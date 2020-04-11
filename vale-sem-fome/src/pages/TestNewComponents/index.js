@@ -6,7 +6,15 @@ import {
     BirthDay,
     PhoneNumber,
     HomeAddress,
-    AcceptanceTerm
+    AcceptanceTerm,
+    RegionCity,
+    CurrentFinancialStatus,
+    PreviousRegister,
+    ResidentsQuantity,
+    AvaiableDays,
+    AvaiableHours,
+    PreviousVolunteersRegister,
+    WorkFront
 } from './../../components';
 import { useForm } from 'react-hook-form';
 import validarCpf from 'validar-cpf'
@@ -91,12 +99,13 @@ function TestNewComponents(props) {
 
     return (
         <div className="container">
+        <h1>Questions Genéricas</h1>
             <form onSubmit={handleSubmit(onSubmit)} className="form" id="form">
-                <FullName register={register} errors={errors}/>
-                <Document register={register} errors={errors}/>
-                <Email register={register} errors={errors}/>
-                <BirthDay register={register} errors={errors}/>
-                <PhoneNumber register={register} errors={errors}/>
+                <FullName register={register} errors={errors} />
+                <Document register={register} errors={errors} />
+                <Email register={register} errors={errors} />
+                <BirthDay register={register} errors={errors} />
+                <PhoneNumber register={register} errors={errors} />
                 <HomeAddress 
                     register={register}
                     errors={errors}
@@ -111,7 +120,21 @@ function TestNewComponents(props) {
                     complement={complement}
                     getCEP={getCEP}
                 />
-                <AcceptanceTerm register={register} errors={errors}/>
+                <h1>Questão - Cidade</h1>
+                <RegionCity register={register} errors={errors} />
+
+                <h1>Questões - Beneficiários</h1>
+                <ResidentsQuantity register={register} errors={errors} />
+                <CurrentFinancialStatus register={register} errors={errors} />
+                <PreviousRegister register={register} errors={errors} />
+
+                <h1>Questões - Voluntários</h1>
+                <AvaiableDays register={register} errors={errors} />
+                <AvaiableHours register={register} errors={errors} />
+                <PreviousVolunteersRegister register={register} errors={errors} />
+                <WorkFront register={register} errors={errors} />
+                
+                <AcceptanceTerm register={register} errors={errors} />
             </form>
             
         </div>
