@@ -3,11 +3,17 @@ import {
     Obrigado,
     Voluntarios,
     ObrigadoVoluntario,
-    PageNotFound
+    PageNotFound,
+    TestNewComponents
 } from './pages'
 
 export default {
     routes: [
+        {
+            name: 'TestNewComponents',
+            path: '/test',
+            component: TestNewComponents
+        },
         {
             name: 'Voluntarios',
             path: '/voluntarios',
