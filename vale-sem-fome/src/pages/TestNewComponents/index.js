@@ -99,17 +99,17 @@ function TestNewComponents(props) {
 
     return (
         <div className="container">
-        <h1>Questions Genéricas</h1>
+            <h1>Questions Genéricas</h1>
             <form onSubmit={handleSubmit(onSubmit)} className="form" id="form">
                 <FullName register={register} errors={errors} />
                 <Document register={register} errors={errors} />
                 <Email register={register} errors={errors} />
                 <BirthDay register={register} errors={errors} />
                 <PhoneNumber register={register} errors={errors} />
-                <HomeAddress 
+                <HomeAddress
                     register={register}
                     errors={errors}
-                    errorsMock={errorsMock} 
+                    errorsMock={errorsMock}
                     setComplement={setComplement}
                     setErrosMock={setErrosMock}
                     setStreet={setStreet}
@@ -133,10 +133,10 @@ function TestNewComponents(props) {
                 <AvaiableHours register={register} errors={errors} />
                 <PreviousVolunteersRegister register={register} errors={errors} />
                 <WorkFront register={register} errors={errors} />
-                
+
                 <AcceptanceTerm register={register} errors={errors} />
             </form>
-            
+
         </div>
     )
 }

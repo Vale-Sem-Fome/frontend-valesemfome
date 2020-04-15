@@ -1,12 +1,15 @@
 import React from 'react';
-import { Input } from './../../../../../index';
+import {
+    Input,
+    FakeGroupButton
+} from './../../../../../index';
 
-function RegionCity(props){
+function RegionCity(props) {
     return (
-        <div className="form-group">
+        <div className="form-group" id={props.question.id}>
             <div className="inputs-group">
                 <label>
-                    Qual região da cidade fica sua residência? *
+                    <span className="question-number">{props.question.number}.</span> Qual região da cidade fica sua residência? *
                 </label>
                 {props.errors.region && <span className="error-message">Campo obrigatório...</span>}
                 <div className="all-options">
@@ -74,8 +77,9 @@ function RegionCity(props){
                         <label htmlFor="opt-edm"> Distrito Eugênio de Melo</label>
                     </div>
                 </div>
-                </div>
+                <FakeGroupButton before={props.question.before} after={props.question.after} />
             </div>
+        </div>
     )
 }
 
