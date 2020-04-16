@@ -1,11 +1,15 @@
 import React from 'react';
-import { Input } from './../../../../index';
+import { 
+    Input,
+    FakeGroupButton
+} from './../../../../index';
 
 function AvaiableHours(props) {
     return (
-    <div className="form-group" id="question10">
+    <div className="form-group" id={props.question.id}>
         <div className="inputs-group">
             <label>
+                <span className="question-number">{props.question.number}.</span>
                 Qual período do dia você poderia ajudar? *
             </label>
             {props.errors.scheduleTime && <span className="error-message">Campo obrigatorio...</span>}
@@ -47,6 +51,7 @@ function AvaiableHours(props) {
                     <label htmlFor="op4-scheduleTime"> Outro</label>
                 </div>
             </div>
+            <FakeGroupButton before={props.question.before} after={props.question.after} />
         </div>
     </div>
     );

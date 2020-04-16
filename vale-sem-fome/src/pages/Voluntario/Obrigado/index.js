@@ -19,8 +19,7 @@ export default function Obrigado() {
                     <div className="img-container">
                         <Images images={images} />
                     </div>
-                </div>
-                <div className="social-media">
+                    <div className="social-media">
                     <p>Nos acompanhe pelas redes sociais!</p>
                     <a href="https://www.instagram.com/sjcsemfome/">
                         <ion-icon name="logo-instagram"></ion-icon>
@@ -28,6 +27,7 @@ export default function Obrigado() {
                     <a href="https://www.facebook.com/sjcsemfome/">
                         <ion-icon name="logo-facebook"></ion-icon>
                     </a>
+                </div>
                 </div>
             </main>
         </div>

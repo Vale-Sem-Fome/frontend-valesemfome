@@ -1,11 +1,15 @@
 import React from 'react';
-import { Input } from './../../../../index';
+import { 
+    Input,
+    FakeGroupButton
+} from './../../../../index';
 
 function AvaiableDays(props) {
     return (
-        <div className="form-group">
+        <div className="form-group" id={props.question.id}>
             <div className="inputs-group">
                 <label>
+                    <span className="question-number">{props.question.number}.</span>
                     Quais dias na semana você poderia ajudar? (selecione quantos quiser) *
                 </label>
                 <div className="all-options">
@@ -55,6 +59,7 @@ function AvaiableDays(props) {
                         <label htmlFor="friday"> Sexta</label>
                     </div>
                 </div>
+                <FakeGroupButton before={props.question.before} after={props.question.after} />
             </div>
         </div>
     );

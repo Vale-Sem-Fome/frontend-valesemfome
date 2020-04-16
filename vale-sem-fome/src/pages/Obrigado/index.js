@@ -14,7 +14,7 @@ export default function Obrigado() {
         <div className="container">
             <main className="thanks-page">
                 <div className="thanks-container">
-                    <div className="">
+                    <div className="text">
                         <p>Nós agradecemos por nos contar um pouco mais sobre você e sua família!</p>
                         <h1>Você é muito importante para nós!</h1>
                         <div className="img-container">
@@ -25,7 +25,7 @@ export default function Obrigado() {
                             recebimento dos alimentos, mas vamos 
                             nos esforçar ao máximo para atender a todos. 
                         </p>
-                        </div>
+                    </div>
                     <div className="social-media">
                         <p>Nos acompanhe pelas redes sociais!</p>
                         <a href="https://www.instagram.com/sjcsemfome/">
