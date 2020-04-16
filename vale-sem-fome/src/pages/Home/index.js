@@ -8,7 +8,6 @@ import {
     BirthDay,
     PhoneNumber,
     HomeAddress,
-    RegionCity,
     ResidentsQuantity,
     CurrentFinancialStatus,
     PreviousRegister,
@@ -127,9 +126,6 @@ export default function Home(props) {
             component: HomeAddress
         },
         {
-            component: RegionCity
-        },
-        {
             component: ResidentsQuantity
         },
         {
@@ -146,6 +142,9 @@ export default function Home(props) {
                 <div className="container">
                     <Header />
                     <form onSubmit={handleSubmit(onSubmit)} className="form" id="form">
+                    <div className="container">
+
+                    
                         {listQuestions.map(
                             question => {
 
@@ -187,6 +186,7 @@ export default function Home(props) {
                             }
                         )}
                         <AcceptanceTerm register={register} errors={errors} />
+                        </div>
                     </form>
                 </div>
             </main>
