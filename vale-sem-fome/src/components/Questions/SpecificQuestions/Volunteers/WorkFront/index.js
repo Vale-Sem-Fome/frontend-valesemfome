@@ -1,11 +1,15 @@
 import React from 'react';
-import { Input } from './../../../../index';
+import { 
+    Input,
+    FakeGroupButton
+} from './../../../../index';
 
 function WorkFront(props) {
     return (
-    <div className="form-group">
+    <div className="form-group" id={props.question.id}>
         <div className="inputs-group">
             <label>
+                <span className="question-number">{props.question.number}.</span>
                 Qual frente você pode ajudar? *
             </label>
             {props.errors.jobArea && <span className="error-message">Campo obrigatório...</span>}
@@ -38,6 +42,7 @@ function WorkFront(props) {
                     <label htmlFor="opt3"> Ambos</label>
                 </div>
             </div>
+            <FakeGroupButton before={props.question.before} after={props.question.after} />
         </div>
     </div>
     );

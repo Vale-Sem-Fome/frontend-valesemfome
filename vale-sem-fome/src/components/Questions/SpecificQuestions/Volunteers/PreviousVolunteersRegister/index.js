@@ -1,11 +1,15 @@
 import React from 'react';
-import { Input } from './../../../../index';
+import { 
+    Input,
+    FakeGroupButton
+} from './../../../../index';
 
 function PreviousVolunteersRegister(props) {
     return (
-        <div className="form-group">
+        <div className="form-group" id={props.question.id}>
             <div className="inputs-group">
                 <label>
+                    <span className="question-number">{props.question.number}.</span>
                     Você já havia se cadastrado antes como voluntários do Movimento Covid19 SJC SEM FOME? *
                 </label>
                 {props.errors.isRegister && <span className="error-message">Campo Obrigatório...</span>}
@@ -38,6 +42,7 @@ function PreviousVolunteersRegister(props) {
                         <label htmlFor="op3-isRegister"> Não me lembro.</label>
                     </div>
                 </div>
+                <FakeGroupButton before={props.question.before} after={props.question.after} />
             </div>
         </div>
     );
