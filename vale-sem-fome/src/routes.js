@@ -4,11 +4,23 @@ import {
     Voluntarios,
     ObrigadoVoluntario,
     PageNotFound,
-    TestNewComponents
+    TestNewComponents,
+    AllRecipients,
+    OneRecipient
 } from './pages'
 
 export default {
     routes: [
+        {
+            name: 'AllRecipients',
+            path: '/recipients',
+            component: AllRecipients
+        },
+        {
+            name: 'OneRecipient',
+            path: '/recipients/id',
+            component: OneRecipient
+        },
         {
             name: 'TestNewComponents',
             path: '/test',

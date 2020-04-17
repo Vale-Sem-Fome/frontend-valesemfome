@@ -37,3 +37,11 @@ export { default as AvaiableDays } from './Questions/SpecificQuestions/Volunteer
 export { default as AvaiableHours } from './Questions/SpecificQuestions/Volunteers/AvaiableHours'
 export { default as PreviousVolunteersRegister } from './Questions/SpecificQuestions/Volunteers/PreviousVolunteersRegister'
 export { default as WorkFront } from './Questions/SpecificQuestions/Volunteers/WorkFront'
+
+
+/**
+ * View: Recipients Data
+ */
+
+ export { default as SJCHeader } from './Headers/SJCHeader'
+ export { default as SearchForm} from './SearchForm/index'

@@ -10,3 +10,10 @@ export { default as PageNotFound } from './PageNotFound'
  */
 
 export { default as TestNewComponents } from './TestNewComponents'
+
+/**
+ *  Views
+ */
+
+export { default as AllRecipients } from './Recipients/ShowAll'
+export { default as OneRecipient } from './Recipients/ShowOne'
