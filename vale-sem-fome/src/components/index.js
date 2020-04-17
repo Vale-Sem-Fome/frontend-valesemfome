@@ -44,4 +44,5 @@ export { default as WorkFront } from './Questions/SpecificQuestions/Volunteers/W
  */
 
  export { default as SJCHeader } from './Headers/SJCHeader'
- export { default as SearchForm} from './SearchForm/index'
+ export { default as SearchForm} from './SearchForm'
+ export { default as Table } from './Table'
