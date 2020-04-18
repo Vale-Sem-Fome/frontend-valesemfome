@@ -2,7 +2,8 @@ import React from 'react';
 import { 
     SJCHeader,
     SearchForm,
-    Table
+    TableDesktop,
+    Footer
 } from './../../../components/index';
 
 function ShowAll() {
@@ -10,7 +11,8 @@ function ShowAll() {
         <div>
             <SJCHeader cityName="São José dos Campos"/>
             <SearchForm totalEntries="23.023 registros"/>
-            <Table />
+            <TableDesktop />
+            <Footer />
         </div>
     )
 }

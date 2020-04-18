@@ -3,6 +3,8 @@
 
 .form-search{
     padding-top: 43px;
+    border-bottom: 2px solid $table-border-color;
+    
 
     .export-data-button{
         button{
@@ -40,6 +42,7 @@
             background-position: 7px 7px;
             background-repeat: no-repeat;
             padding-left: 40px;
+            margin-bottom: 20px;
         }
     }
 }
@@ -88,6 +91,50 @@
                 width: 100%;
             }
         } 
+    }
+
+}
+
+@media only screen and (min-width: 768px){
+
+    .form-search{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+
+        .export-data-button{
+            width: 50%;
+            order: 2;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .search-input{
+            width: 50%;
+            order: 1;
+
+            span{
+                font-size: 0.75em;
+            }
+
+            input[type="search"]{
+                margin-top: 10px;
+                width: 100%;
+            }
+        }
+        
+    }
+}
+
+@media only screen and (min-width: 992px){
+
+    .form-search{
+        .search-input{
+
+            input[type="search"]{
+                width: 70%;
+            }
+        }
     }
 
 }
