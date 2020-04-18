@@ -1,0 +1,140 @@
+@import './../../assets/css/components/variables.scss';
+@import './../../assets/css/components/buttons.scss';
+
+.form-search{
+    padding-top: 43px;
+    border-bottom: 2px solid $table-border-color;
+    
+
+    .export-data-button{
+        button{
+            position: absolute;
+            background-color: $background-button-color;
+            color: $font-button-color;
+            font-family: $font-text;
+            font-weight: $font-weight-strong;
+            padding: 3px 15px;
+            border-color: transparent;
+            border-radius: 2px;
+            font-size: 0.875em;
+            box-shadow: 2px 2px 4px $box-shadow-color;
+            text-shadow: 2px 2px 4px $text-shadow-color;
+            img{
+                padding-right: 8px;
+            }
+        }
+    }
+
+    .search-input{
+        display: flex;
+        flex-direction: column;
+
+        span{
+            color: $secundary-font-text-color;
+        }
+
+        input[type="search"]{
+            height: 30px;
+            border: 1px solid $border-input-text-color;
+            border-radius: 4px;
+            background-image: url('./../../assets/images/search.svg');
+            background-color: white;
+            background-position: 7px 7px;
+            background-repeat: no-repeat;
+            padding-left: 40px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+    .form-search{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        .export-data-button{
+            display: flex;
+            justify-content: flex-end;
+            
+            button{
+                position: absolute;
+                background-color: $background-button-color;
+                color: $font-button-color;
+                font-family: $font-text;
+                font-weight: $font-weight-strong;
+                padding: 3px 15px;
+                border-color: transparent;
+                border-radius: 2px;
+                font-size: 0.875em;
+                box-shadow: 2px 2px 4px $box-shadow-color;
+                text-shadow: 2px 2px 4px $text-shadow-color;
+                img{
+                    padding-right: 8px;
+                }
+            }
+        }
+
+        .search-input{
+            width: 100%;
+            padding-top: 10px;
+
+            span{
+                width: 100%;
+                padding-bottom: 13px;
+                font-size: smaller;
+            }
+
+
+            input[type="search"]{
+                width: 100%;
+            }
+        } 
+    }
+
+}
+
+@media only screen and (min-width: 768px){
+
+    .form-search{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+
+        .export-data-button{
+            width: 50%;
+            order: 2;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .search-input{
+            width: 50%;
+            order: 1;
+
+            span{
+                font-size: 0.75em;
+            }
+
+            input[type="search"]{
+                margin-top: 10px;
+                width: 100%;
+            }
+        }
+        
+    }
+}
+
+@media only screen and (min-width: 992px){
+
+    .form-search{
+        .search-input{
+
+            input[type="search"]{
+                width: 70%;
+            }
+        }
+    }
+
+}

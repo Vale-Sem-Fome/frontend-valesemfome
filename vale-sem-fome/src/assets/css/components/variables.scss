@@ -3,19 +3,23 @@ $background-body: #FFFBFF;
 $dangerous-color: #F56B6B;
 $alert-color: #F56B6B;
 
+/* Buttons */
 $background-button-color: #93A66A;
 $font-button-color: #F2F2F2;
 $secundary-green-color: #CFCB9B;
 
+/* Borders */
 $border-footer-color: #8C8C8C;
 $border-input-text-color: #93A66A;
 $social-media-icons-color: #93A66A;
 
 $white-color: #FFFFFF;
 
+/* Shadows */
 $text-shadow-color: #595959;
 $box-shadow-color: #595959;
 
+/* Fonts */
 $link-text-color: #93A66A;
 $font-text-color: #595959;
 $secundary-font-text-color: #8C8C8C;
@@ -24,3 +28,13 @@ $headline-font:'Anton', sans-serif;
 $font-text: 'Lato', sans-serif;
 $font-weight-light: 300;
 $font-weight-strong: 700;
+
+/* Tables */
+$table-border-color: #8C8C8C;
+
+/* Current Status Financial*/
+$extremely-serious-status: #F56B6B;
+$really-serious-status: #D3975E;
+$serious-status: #C6A552;
+$risk-status: #83A0BB;
+$others-status: #595959;
