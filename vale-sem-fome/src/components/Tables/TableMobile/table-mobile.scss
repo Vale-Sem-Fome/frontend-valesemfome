@@ -1,0 +1,54 @@
+@import './../../assets/css/components/variables.scss';
+
+
+@media only screen and (max-width: 600px){
+
+    // .table{
+    //     border-collapse: collapse;
+    //     table-layout: auto;
+    //     width: 100%;
+        
+    //     thead{
+    //         display: none;
+    //     }
+
+    //     tr{
+    //         border-bottom: 1px solid $table-border-color;
+    //     }
+
+    //     td{
+    //         align-items: baseline;
+    //         background-color: aliceblue;
+    //     }
+
+    //     td:nth-child(1){
+    //         width: 50%;
+    //         font-size: 1em;
+    //         font-weight: $font-weight-strong;
+    //     }
+
+    //     td:nth-child(2){
+    //         width: 50%;
+    //         color: $secundary-font-text-color;
+    //         font-size: 0.625em;
+    //     }
+
+    //     td:nth-child(3){
+    //         width: 33%;
+    //         font-size: 0.75em;
+    //     }
+
+    //     td:nth-child(4){
+    //         width: 33%;
+    //         font-size: 0.75em;
+    //     }
+
+    //     td:nth-child(5){
+    //         width: 33%;
+    //         font-size: 0.625em; 
+    //         color: $alert-color;
+    //     }
+        
+    // }
+
+}
