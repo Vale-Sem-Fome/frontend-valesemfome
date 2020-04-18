@@ -1,54 +1,62 @@
-@import './../../assets/css/components/variables.scss';
+@import './../../../assets/css/components/variables.scss';
 
+.extremely-serious{
+    color: $extremely-serious-status;
+}
 
-@media only screen and (max-width: 600px){
+.really-serious{
+    color: $really-serious-status;
+}
 
-    // .table{
-    //     border-collapse: collapse;
-    //     table-layout: auto;
-    //     width: 100%;
-        
-    //     thead{
-    //         display: none;
-    //     }
+.serious{
+    color: $serious-status;
+}
 
-    //     tr{
-    //         border-bottom: 1px solid $table-border-color;
-    //     }
+.risk{
+    color: $risk-status;
+}
 
-    //     td{
-    //         align-items: baseline;
-    //         background-color: aliceblue;
-    //     }
+.others-status{
+    color: $others-status;
+}
 
-    //     td:nth-child(1){
-    //         width: 50%;
-    //         font-size: 1em;
-    //         font-weight: $font-weight-strong;
-    //     }
+@media only screen and (max-width: 767px){
 
-    //     td:nth-child(2){
-    //         width: 50%;
-    //         color: $secundary-font-text-color;
-    //         font-size: 0.625em;
-    //     }
+    .fake-table{
+        padding-top: 6px;
+        padding-bottom: 6px;
+        border-bottom: 1px solid $table-border-color;
 
-    //     td:nth-child(3){
-    //         width: 33%;
-    //         font-size: 0.75em;
-    //     }
+        .table-row{
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
 
-    //     td:nth-child(4){
-    //         width: 33%;
-    //         font-size: 0.75em;
-    //     }
+        .table-row:nth-child(1){
 
-    //     td:nth-child(5){
-    //         width: 33%;
-    //         font-size: 0.625em; 
-    //         color: $alert-color;
-    //     }
-        
-    // }
+            div:first-child{
+                font-weight: $font-weight-strong;
+                font-size: 1em;
+                padding-bottom: 9px;
+            }
+            
+            div:last-child{
+                font-size: 0.625em;
+                color: $secundary-font-text-color;
+            }
+        }
+
+        .table-row:nth-child(2){
+            font-size: 0.75em;
+            color: $font-text-color;
+            font-weight: $font-weight-light;
+
+            div:last-child{
+                font-size: 0.87em;
+                font-weight: $font-weight-strong;
+            }
+        }
+    }
 
 }
