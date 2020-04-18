@@ -43,6 +43,7 @@ export { default as WorkFront } from './Questions/SpecificQuestions/Volunteers/W
  * View: Recipients Data
  */
 
- export { default as SJCHeader } from './Headers/SJCHeader'
+ export { default as CityHeader } from './Headers/CityHeader'
  export { default as SearchForm} from './SearchForm'
  export { default as TableDesktop } from './Tables/TableDesktop'
+ export { default as TableMobile } from './Tables/TableMobile'

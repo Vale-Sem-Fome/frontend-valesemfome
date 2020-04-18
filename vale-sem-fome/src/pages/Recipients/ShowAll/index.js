@@ -1,17 +1,15 @@
 import React from 'react';
 import { 
-    SJCHeader,
+    CityHeader,
     SearchForm,
-    TableDesktop,
     Footer
 } from './../../../components/index';
 
 function ShowAll() {
     return (
         <div>
-            <SJCHeader cityName="São José dos Campos"/>
+            <CityHeader cityName="São José dos Campos"/>
             <SearchForm totalEntries="23.023 registros"/>
-            <TableDesktop />
             <Footer />
         </div>
     )
