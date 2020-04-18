@@ -31,7 +31,7 @@ git checkout -b i-am-groot_style-form-components
 Depois de fazer suas contribuição, chegou a hora dos commits. Pedimos que:
 
 - o texto do `commit` esteja em inglês
-- estamos vendo alguma forma de padronização dos textos dos `commits`. Até lá, pedimos para que vocês sigam um modelo semelhante ao [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/).
+- estamos vendo alguma forma de padronização dos textos dos `commits`. Até lá, pedimos para que vocês sigam um modelo semelhante ao [conventional commits](https://www.conventionalcommits.org/en/v1.0.0-beta.4/).
 
 ## Dando Commits
 
