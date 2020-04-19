@@ -1,0 +1,43 @@
+@import './../../../../assets/css/components/variables.scss';
+
+.header-page{
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header-title{
+        text-transform: uppercase;
+
+        p{
+            font-weight: $font-weight-strong;
+            color: $secundary-font-text-color;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+    .header-page{
+        padding-top: 28px;
+
+        .header-logo{
+            width: 30%;
+            margin-right: 22px;
+        }
+
+        .header-title{
+            width: 70%;
+            line-height: 38px;
+
+            h1{
+                font-size: 1.875em;
+                letter-spacing: 0px;
+            }
+
+            p{
+                line-height: 20px;
+            }
+        }
+    }
+}

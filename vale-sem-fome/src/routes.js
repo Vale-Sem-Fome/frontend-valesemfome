@@ -1,50 +1,44 @@
 import {
-    Home,
-    Obrigado,
-    Voluntarios,
-    ObrigadoVoluntario,
     PageNotFound,
-    TestNewComponents,
-    AllRecipients,
-    OneRecipient
+    RecipientsFindAll,
+    RecipientsFindByOne,
+    RecipientsForm,
+    VolunteersForm,
+    VolunteersThanks,
+    RecipientsThanks
 } from './pages'
 
 export default {
     routes: [
         {
-            name: 'AllRecipients',
-            path: '/recipients',
-            component: AllRecipients
+            name: 'RecipientsFindAll',
+            path: '/painel/beneficiarios',
+            component: RecipientsFindAll
         },
         {
-            name: 'OneRecipient',
-            path: '/recipients/id',
-            component: OneRecipient
-        },
-        {
-            name: 'TestNewComponents',
-            path: '/test',
-            component: TestNewComponents
-        },
-        {
-            name: 'Voluntarios',
+            name: 'VolunteersForm',
             path: '/voluntarios',
-            component: Voluntarios
+            component: VolunteersForm
         },
         {
-            name: 'ObrigadoVoluntario',
-            path: '/obrigado/voluntario',
-            component: ObrigadoVoluntario
+            name: 'VolunteersThanks',
+            path: 'voluntarios/obrigado',
+            component: VolunteersThanks
         },
         {
-            name: 'Obrigado',
-            path: '/obrigado',
-            component: Obrigado
+            name: 'RecipientsFindByOne',
+            path: '/painel/beneficiarios/:id',
+            component: RecipientsFindByOne
         },
         {
-            name: 'Home',
+            name: 'RecipientsThanks',
+            path: '/beneficiarios/obrigado',
+            component: RecipientsThanks
+        },
+        {
+            name: 'RecipientsForm',
             path: '/',
-            component: Home
+            component: RecipientsForm
         },
         {
             name: 'PageNotFound',
