@@ -1,8 +1,0 @@
-export { default as App } from '../App'
-export { default as Input } from '../Input'
-export { default as Header } from './Header'
-export { default as FakeGroupButton } from './FakeGroupButton'
-export { default as Footer } from './Footer'
-export { default as InputMask } from '../InputMask'
-export { default as Images} from '../Images'
-export { default as HeaderVolunteer } from '../FormVolunteers/Header'

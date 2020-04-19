@@ -1,0 +1,62 @@
+@import './../../../../assets/css/components/variables.scss';
+
+.extremely-serious{
+    color: $extremely-serious-status;
+}
+
+.really-serious{
+    color: $really-serious-status;
+}
+
+.serious{
+    color: $serious-status;
+}
+
+.risk{
+    color: $risk-status;
+}
+
+.others-status{
+    color: $others-status;
+}
+
+@media only screen and (max-width: 767px){
+
+    .fake-table{
+        padding-top: 6px;
+        padding-bottom: 6px;
+        border-bottom: 1px solid $table-border-color;
+
+        .table-row{
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .table-row:nth-child(1){
+
+            div:first-child{
+                font-weight: $font-weight-strong;
+                font-size: 1em;
+                padding-bottom: 9px;
+            }
+            
+            div:last-child{
+                font-size: 0.625em;
+                color: $secundary-font-text-color;
+            }
+        }
+
+        .table-row:nth-child(2){
+            font-size: 0.75em;
+            color: $font-text-color;
+            font-weight: $font-weight-light;
+
+            div:last-child{
+                font-size: 0.87em;
+                font-weight: $font-weight-strong;
+            }
+        }
+    }
+
+}

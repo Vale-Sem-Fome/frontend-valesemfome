@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from './../../assets/images/logo.png';
-import Footer from './../../components/FormRecipients/Footer';
+import Footer from './../../components/Generics/Footer';
 const titlePage = "404 - Página Não Encontrada...";
 
 function PageNotFound() {

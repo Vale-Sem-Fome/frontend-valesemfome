@@ -1,11 +1,11 @@
 export { default as App } from './App'
-export { default as Input } from './Input'
-export { default as Header } from './FormRecipients/Header'
-export { default as FakeGroupButton } from './FormRecipients/FakeGroupButton'
-export { default as Footer } from './FormRecipients/Footer'
-export { default as InputMask } from './InputMask'
-export { default as Images} from './Images'
-export { default as HeaderVolunteer } from './FormVolunteers/Header'
+export { default as Input } from './Generics/Forms/Input'
+export { default as HeaderRecipients } from './Recipients/Header'
+export { default as FakeGroupButton } from './Generics/Forms/FakeGroupButton'
+export { default as Footer } from './Generics/Footer'
+export { default as InputMask } from './Generics/Forms/InputMask'
+export { default as Images} from './Generics/Images'
+export { default as HeaderVolunteer } from './Volunteers/Header'
 
 /**
  * Generics Questions
@@ -18,7 +18,6 @@ export { default as BirthDay } from './Questions/GeneralQuestions/BirthDay'
 export { default as PhoneNumber } from './Questions/GeneralQuestions/PhoneNumber'
 export { default as HomeAddress } from './Questions/GeneralQuestions/HomeAddress'
 export { default as AcceptanceTerm } from './Questions/GeneralQuestions/AcceptanceTerm'
-
 
 /**
  * Specific Questions: Recipients
@@ -43,7 +42,7 @@ export { default as WorkFront } from './Questions/SpecificQuestions/Volunteers/W
  * View: Recipients Data
  */
 
- export { default as CityHeader } from './Headers/CityHeader'
- export { default as SearchForm} from './SearchForm'
- export { default as TableDesktop } from './Tables/TableDesktop'
- export { default as TableMobile } from './Tables/TableMobile'
+ export { default as CityHeader } from './Generics/Headers/CityHeader'
+ export { default as SearchForm} from './Generics/Forms/SearchForm'
+ export { default as TableDesktop } from './Generics/Tables/TableDesktop'
+ export { default as TableMobile } from './Generics/Tables/TableMobile'
