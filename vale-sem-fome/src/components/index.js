@@ -44,5 +44,5 @@ export { default as WorkFront } from './Questions/SpecificQuestions/Volunteers/W
 
  export { default as CityHeader } from './Generics/Headers/CityHeader'
  export { default as SearchForm} from './Generics/Forms/SearchForm'
- export { default as TableDesktop } from './Generics/Tables/TableDesktop'
- export { default as TableMobile } from './Generics/Tables/TableMobile'
+ export { default as TableDesktop } from './Recipients/Tables/TableDesktop'
+ export { default as TableMobile } from './Recipients/Tables/TableMobile'

@@ -1,11 +1,12 @@
 import React from 'react';
 import { 
     CityHeader,
-    SearchForm,
     TableMobile,
     TableDesktop,
+    SearchForm,
     Footer
 } from './../../../../components';
+
 
 function RecipientsFindAll() {
     let screenWidth = window.screen.width;
