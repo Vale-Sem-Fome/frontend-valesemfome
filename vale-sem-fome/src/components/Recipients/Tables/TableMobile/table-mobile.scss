@@ -1,25 +1,5 @@
 @import './../../../../assets/css/components/variables.scss';
 
-.extremely-serious{
-    color: $extremely-serious-status;
-}
-
-.really-serious{
-    color: $really-serious-status;
-}
-
-.serious{
-    color: $serious-status;
-}
-
-.risk{
-    color: $risk-status;
-}
-
-.others-status{
-    color: $others-status;
-}
-
 @media only screen and (max-width: 767px){
 
     .fake-table{

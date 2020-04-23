@@ -25,7 +25,6 @@ function TableMobile({
         case "Outros":
             currentStatus += " others-status";
                 break;
-    
         default:
             break;
     }

@@ -1,0 +1,103 @@
+@import './../../../../assets/css/components/variables.scss';
+
+.extremely-serious{
+    color: $extremely-serious-status;
+}
+
+.really-serious{
+    color: $really-serious-status;
+}
+
+.serious{
+    color: $serious-status;
+}
+
+.risk{
+    color: $risk-status;
+}
+
+.others-status{
+    color: $others-status;
+}
+
+.table, th{
+    border-collapse: collapse;
+    border-bottom: 1px solid $table-border-color;
+}
+
+.table{
+    width: 100%;
+    
+    th{
+        text-align: left;
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+
+    .desktop-table{
+        overflow-x: auto;
+        width: 100%;
+
+        .table{
+            td, th{
+                height: 50px;
+                font-size: 0.625em;
+                padding: 5px;
+            }
+        }    
+    }
+    
+}
+
+@media only screen and (min-width: 601px){
+
+    .desktop-table{
+        overflow-x: auto;
+        width: 100%;
+
+        .table{
+            td, th{
+                height: 50px;
+                font-size: 0.875em;
+                table-layout: auto;
+                padding: 5px;
+            }
+        }    
+    }
+    
+}
+
+@media only screen and (min-width: 768px){
+    .table{
+        margin-top: 15px;
+        width: 100%;
+        
+        thead{
+            text-align: left;
+        }
+    
+        tr{
+            border-bottom: 1px solid $table-border-color;
+        }
+    
+        td, th{
+            height: 50px;
+            vertical-align: middle;
+            font-size: 1em;
+        }
+    
+        td:nth-child(1){
+            
+            font-weight: $font-weight-strong;
+        }
+    
+        td:nth-child(2), 
+        td:nth-child(3), 
+        td:nth-child(4){
+            color: $secundary-font-text-color;
+        }
+        
+    }
+}

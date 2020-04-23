@@ -1,0 +1,39 @@
+@import './../../../assets/css/components/variables.scss';
+
+.pagination{
+    
+    .row{
+        margin-top: 15px;
+        padding-top: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .previous-page, .current-page, .next-page{
+            width: calc(100%/3)‬;
+        }
+        
+        .current-page{
+
+            span{
+                margin-left: 5px;
+                margin-right: 5px;
+                color: $total-pages;
+            }
+
+            span:first-child{
+                font-weight: $font-weight-strong;
+                color: $current-page;
+            }
+        }
+
+    }
+}
+
+@media only screen  and (max-width: 768px){
+    .pagination{
+        .current-page{
+            font-size: 0.875em;
+        }
+    }
+}
