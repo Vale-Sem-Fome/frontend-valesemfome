@@ -1,8 +1,8 @@
 import React from 'react';
 import logo from './../../../../assets/images/logo-sjc-sem-fome.jpeg';
-import './sjc-page.scss';
+import './city-header.scss'
 
-function SJCHeader({ cityName }) {
+function CityHeader({ cityName }) {
     return (
         <div>
             <header className="header-page">
@@ -20,4 +20,4 @@ function SJCHeader({ cityName }) {
     );
 }
 
-export default SJCHeader;
+export default CityHeader;
