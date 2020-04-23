@@ -1,0 +1,55 @@
+@import './../../../assets/css/components/variables.scss';
+
+.find-by-one{
+    padding-top: 5%;
+    
+    section{
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            border-bottom: 2px solid $list-recipient-border-header;
+            padding-bottom: 5px;
+            h3{
+                font-family: $font-text;
+            }
+        }
+
+        main{
+            display: flex;
+            flex-direction: column;
+
+            span{
+                padding-top: 10px;
+                border-bottom: 1px solid $list-recipient-border-itens;
+            }
+
+            strong{
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 300px){
+
+    .find-by-one{
+        font-size: 0.875em;
+        padding-top: 10%;
+        
+        header{
+            font-size: 0.875em;
+            h3{
+                letter-spacing: unset;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:769px){
+
+        .find-by-one{
+            padding-top: 5%;
+            font-size: 1em;
+        }
+}
