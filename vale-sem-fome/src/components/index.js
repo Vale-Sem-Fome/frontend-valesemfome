@@ -46,3 +46,10 @@ export { default as WorkFront } from './Questions/SpecificQuestions/Volunteers/W
  export { default as SearchForm} from './Generics/Forms/SearchForm'
  export { default as TableDesktop } from './Recipients/Tables/TableDesktop'
  export { default as TableMobile } from './Recipients/Tables/TableMobile'
+
+
+/**
+ * Pagination
+ */
+
+export { default as Pagination } from './Generics/Pagination'

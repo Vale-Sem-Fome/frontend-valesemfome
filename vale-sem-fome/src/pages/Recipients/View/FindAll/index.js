@@ -4,6 +4,7 @@ import {
     TableMobile,
     TableDesktop,
     SearchForm,
+    Pagination,
     Footer
 } from './../../../../components';
 
@@ -23,6 +24,9 @@ function RecipientsFindAll() {
                     neighbourhood="Novo Horizonte"
                     currentFinancialStatus="Extremamente Séria"
                 />
+                <Pagination currentPage="2"
+                    totalPages="204"
+                />
                 <Footer />
             </div>
         )
@@ -37,6 +41,9 @@ function RecipientsFindAll() {
                     regionCity="Zona Norte"
                     neighbourhood="Novo Horizonte"
                     currentFinancialStatus="Extremamente Séria"
+                />
+                <Pagination currentPage="2"
+                    totalPages="204"
                 />
                 <Footer />
             </div>
