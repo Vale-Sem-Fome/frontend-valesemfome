@@ -89,7 +89,6 @@
         }
     
         td:nth-child(1){
-            
             font-weight: $font-weight-strong;
         }
     
@@ -99,5 +98,12 @@
             color: $secundary-font-text-color;
         }
         
+    }
+}
+
+@media only screen and (min-width: 992px){
+
+    .table{
+        font-size: 1.125em;
     }
 }

@@ -1,3 +1,19 @@
+@import './../../../../assets/css/components/variables.scss';
+
+.recipient{
+    .recipient-title{
+        color: $font-text-color;
+    }
+
+    .back-to-list-all-top, .back-to-list-all-bottom{
+        margin-top: 5%;
+    }
+
+    .back-to-list-all-bottom{
+        text-align: center;
+    }
+}
+
 @media only screen and (min-width: 768px){
     .recipient{
         width: 50%;

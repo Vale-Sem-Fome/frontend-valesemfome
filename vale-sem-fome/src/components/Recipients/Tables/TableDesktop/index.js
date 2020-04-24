@@ -1,9 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './table-desktop.scss';
 
-function TableDesktop({fullName, cpf, 
+function TableDesktop({
+    fullName, cpf, 
     regionCity, neighbourhood,
-    currentFinancialStatus}){
+    currentFinancialStatus
+}){
         let currentStatus = "currentStatus";
         switch (currentFinancialStatus) {
             case "Extremamente Séria":
@@ -30,16 +33,20 @@ function TableDesktop({fullName, cpf,
                 <table className="table">
                     <thead>
                         <tr>
-                        <th>Nome:</th>
-                        <th>CPF:</th>
-                        <th>Região:</th>
-                        <th>Bairro:</th>
-                        <th>Situação Atual:</th>
+                            <th>Nome:</th>
+                            <th>CPF:</th>
+                            <th>Região:</th>
+                            <th>Bairro:</th>
+                            <th>Situação Atual:</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>{fullName}</td>
+                            <td>
+                                <Link to="/painel/beneficiarios/:id">
+                                    {fullName}
+                                </Link>
+                            </td>
                             <td>{cpf}</td>
                             <td>{regionCity}</td>
                             <td>{neighbourhood}</td>

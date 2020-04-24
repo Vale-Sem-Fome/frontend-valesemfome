@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { 
     CityHeader,
     FindByOneRecipients,
@@ -30,10 +31,22 @@ function RecipientsFindByOne() {
     }];
     return (
         <div className="recipient">
-            <CityHeader cityName="São José dos Campos" />
+            <Link className="recipient-title" to="/painel/beneficiarios">
+                <CityHeader cityName="São José dos Campos" />
+            </Link>
+            <div className="container back-to-list-all-top">
+                <Link to="/painel/beneficiarios">
+                    &#171; voltar para a lista
+                </Link>
+            </div>
             <FindByOneRecipients recipientDatas={recipientDatas} />
             <Pagination currentPage="20.022"
                 totalPages="20.023" />
+            <div  className="back-to-list-all-bottom">
+                <Link to="/painel/beneficiarios">
+                &#171; voltar para a lista
+                </Link>
+            </div>
             <Footer /> 
         </div>
     )
