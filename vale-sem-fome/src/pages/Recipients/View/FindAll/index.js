@@ -36,11 +36,11 @@ function RecipientsFindAll() {
                 <CityHeader cityName="São José dos Campos"/>
                 <SearchForm totalEntries="23.023 registros"/>
                 <TableDesktop 
-                    fullName="José Luiz Vasco" 
+                    fullName="Sheila Santana Vilela Araújo" 
                     cpf="000.001.010-01"
                     regionCity="Zona Norte"
                     neighbourhood="Novo Horizonte"
-                    currentFinancialStatus="Extremamente Séria"
+                    currentFinancialStatus="Muito Séria"
                 />
                 <Pagination currentPage="2"
                     totalPages="204"
