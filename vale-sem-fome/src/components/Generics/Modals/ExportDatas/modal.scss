@@ -1,0 +1,173 @@
+@import './../../../../assets/css/components/variables.scss';
+
+$modal-container-background: #00000088;
+$modal-header-background-color: #93A66A;
+$modal-header-color-font: #FFFBFF;
+$modal-button-color-font: #FFFBFF;
+$modal-icon-color: #93A66A;
+
+.modal-container{
+    background-color: $modal-container-background;
+    z-index: 1;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    
+    @keyframes enter-modal{
+        from{
+            top: -300px;
+            opacity: 0;
+        }
+        to{
+            top: 0;
+            opacity: 1;
+        }
+    }
+
+    .modal-content{
+        background-color: $background-body;
+        margin-top: 25%;
+        transform: translateY(50%);
+        position: relative;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        animation-name: enter-modal;
+        animation-duration: 0.4s;
+    
+
+        .modal-header{
+            background-color: $modal-header-background-color;
+            color: $modal-header-color-font;
+            text-transform: uppercase;
+            width: 100%;
+
+            .text{
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .close{
+                    font-size: 1.5em;
+                    cursor: pointer;
+                }
+
+                .close:focus,
+                .close:hover{
+                    color: $secundary-font-text-color;
+                }
+            }
+
+            h3{
+                font-family: $secundary-font-family;
+                font-size: 1.5em;
+            }
+        }
+
+        .modal-body{
+            padding: 20px;
+
+            .form-modal{
+                p{
+                    margin-bottom: 15px;
+                    font-size: 1em;
+                }
+                
+                .form-group-modal{
+                    padding-bottom: 10px;
+                    input[type="radio"]{
+                        margin-right: 5px;
+                        
+                    }
+
+                }
+
+                .form-group-button{
+                    margin-top: 15px;
+                    display: flex;
+                    justify-content: center;
+
+                    button{
+                        padding: 5px;
+                        margin: 5px;
+                        border: none;
+                        border-radius: 4px;
+                        box-shadow: 1px 1px 5px #595959;
+                        font-weight: $font-weight-strong;
+                    }
+
+                    button:first-child{
+                        color: $secundary-font-text-color;
+                    }
+
+                    button:last-child{
+                        background-color: $background-button-color;
+                        color: $modal-button-color-font;
+                        text-shadow: 1px 1px 5px #595959;
+                        
+                    }
+                }
+            }
+            
+        }
+    }
+
+
+
+}
+
+@media only screen and (max-width: 768px){
+    .modal-icon-container{
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 769px){
+    .modal-container{
+    
+        .modal-content{
+            width: 40%;
+    
+            .modal-header{
+                .close{
+                    font-size: 2em;
+                }
+            }
+
+            .modal-question{
+                
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .modal-fields{
+                    width: 60%;
+                    padding: 10px;
+                }
+
+                .modal-icon-container{
+                    width: 40%;
+                    text-align: right;
+                    padding: 10px;
+                }
+
+                .modal-icon-container ion-icon{
+                    color: $modal-icon-color;
+                    font-size: 8em;
+                    background-color: transparent;
+                    box-shadow: none;
+                }
+            }
+
+        }
+    
+    
+    
+    }
+}

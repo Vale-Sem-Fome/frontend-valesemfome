@@ -4,6 +4,7 @@ import {
     TableMobile,
     TableDesktop,
     SearchForm,
+    ModalExportData,
     Pagination,
     Footer
 } from './../../../../components';
@@ -15,6 +16,7 @@ function RecipientsFindAll() {
     if(screenWidth < 768){
         return (
             <div>
+                <ModalExportData />
                 <CityHeader cityName="São José dos Campos"/>
                 <SearchForm totalEntries="23.023 registros"/>
                 <TableMobile 
@@ -33,6 +35,7 @@ function RecipientsFindAll() {
     } else{
         return (
             <div>
+                <ModalExportData />
                 <CityHeader cityName="São José dos Campos"/>
                 <SearchForm totalEntries="23.023 registros"/>
                 <TableDesktop 
