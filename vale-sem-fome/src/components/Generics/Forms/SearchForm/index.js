@@ -5,12 +5,16 @@ import {
 import googleSheetsIcon from './../../../../assets/images/googlesheets.svg'
 import './search-form.scss';
 
-function SearchForm({totalEntries}) {  
+function SearchForm({totalEntries, openModal}) {
+    
+    function open() {  
+        openModal()
+    }
     return (
         <div className="container">
-         <form className="form-search">
+         <div className="form-search">
             <div className="export-data-button">
-                <button>
+                <button onClick={()=> open()}>
                     <img className="img-fluid" src={googleSheetsIcon} alt="Google Sheets Icon"/>
                     Exportar Dados
                 </button>
@@ -21,7 +25,7 @@ function SearchForm({totalEntries}) {
                 </span>
                 <Input type="search" placeholder="Pesquise..."/>
             </div>
-         </form>
+         </div>
         </div>
     );
 }

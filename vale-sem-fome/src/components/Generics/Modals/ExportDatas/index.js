@@ -1,17 +1,20 @@
 import React from 'react';
 import './modal.scss';
 
-function ExportDatas() {
-    const modalWindow = "modal-window";
+function ExportDatas({closeModal}) {
+
+    function close() {
+        closeModal();
+    }
 
     return (
-        <div className="modal-window" id={modalWindow}>
+        <div className="modal-window">
             <div className="modal-container">
                 <div className="modal-content">
                     <header className="modal-header">
                         <div className="text">
                         <h3>Exportar Dados</h3>
-                        <span className="close">&times;</span>
+                        <span className="close" onClick={()=> close()}>&times;</span>
                         </div>
                     </header>
                     <main className="modal-body">
@@ -33,7 +36,7 @@ function ExportDatas() {
                                 </div>
                             </div>
                             <div className="form-group-button">
-                                <button >Cancelar</button>
+                                <button onClick={() => close()}>Cancelar</button>
                                 <button>Exportar</button>
                             </div>
                         </form>
