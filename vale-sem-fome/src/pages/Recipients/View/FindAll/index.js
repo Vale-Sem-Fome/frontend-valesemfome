@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { 
     CityHeader,
     TableMobile,
     TableDesktop,
     SearchForm,
+    ModalExportData,
     Pagination,
     Footer
 } from './../../../../components';
@@ -12,11 +13,23 @@ import {
 function RecipientsFindAll() {
     let screenWidth = window.screen.width;
 
+    const [viewModal, setViewModal] = useState(false);
+
+    function openModal() {
+        setViewModal(true);
+    }
+
+    function closeModal() {
+        setViewModal(false);
+    }
+
     if(screenWidth < 768){
         return (
             <div>
+            {viewModal ? <ModalExportData closeModal={closeModal}/> : ""}
+                
                 <CityHeader cityName="São José dos Campos"/>
-                <SearchForm totalEntries="23.023 registros"/>
+                <SearchForm openModal={openModal} totalEntries="23.023 registros"/>
                 <TableMobile 
                     fullName="José Luiz Vasco" 
                     cpf="000.001.010-01"
@@ -33,8 +46,9 @@ function RecipientsFindAll() {
     } else{
         return (
             <div>
+                {viewModal ? <ModalExportData closeModal={closeModal}/> : ""}
                 <CityHeader cityName="São José dos Campos"/>
-                <SearchForm totalEntries="23.023 registros"/>
+                <SearchForm openModal={openModal} totalEntries="23.023 registros"/>
                 <TableDesktop 
                     fullName="Sheila Santana Vilela Araújo" 
                     cpf="000.001.010-01"
