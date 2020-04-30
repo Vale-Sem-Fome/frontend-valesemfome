@@ -56,3 +56,8 @@ export { default as Pagination } from './Generics/Pagination'
  * Modal
  */
  export { default as ModalExportData } from './Generics/Modals/ExportDatas'
+
+ /**
+  * Login Form
+  */
+ export { default as LoginForm } from './Generics/Forms/LoginForm'

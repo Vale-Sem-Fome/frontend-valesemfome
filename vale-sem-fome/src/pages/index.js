@@ -10,3 +10,9 @@ export { default as PageNotFound } from './PageNotFound'
 
 export { default as RecipientsFindAll } from './Recipients/View/FindAll'
 export { default as RecipientsFindByOne } from './Recipients/View/FindByOne'
+
+/**
+ * Login Page
+ */
+
+export { default as LoginPage} from './LoginPage'
