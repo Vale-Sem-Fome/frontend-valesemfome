@@ -5,11 +5,17 @@ import {
     RecipientsForm,
     VolunteersForm,
     VolunteersThanks,
-    RecipientsThanks
+    RecipientsThanks,
+    LoginPage
 } from './pages'
 
 export default {
     routes: [
+        {
+            name: 'LoginPage',
+            path: '/login',
+            component: LoginPage
+        },
         {
             name: 'RecipientsFindAll',
             path: '/painel/beneficiarios',
